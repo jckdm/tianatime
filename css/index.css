@@ -1,0 +1,53 @@
+body {
+  font-family: Palatino, serif;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.homemenu {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  text-align: center;
+  font-size: calc(5px + 3.5vw);
+  width: calc(25px + 25vw);
+  padding-left: calc(1vw + 1vh);
+  padding-right: calc(1vw + 1vh);
+}
+
+p {
+  font-size: calc(9px + 0.75vw);
+  border-bottom: calc(1px + 1vw) solid mediumseagreen;
+  border-top: calc(1px + 1vw) solid mediumseagreen;
+  border-left: calc(1px + 1vw) solid transparent;
+  border-right: calc(1px + 1vw) solid transparent;
+  padding: calc(5px + 0.5vw);
+  width: calc(20px + 15vw);
+  line-height: 1.25em;
+}
+
+a, a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+p:hover {
+  border-top: calc(1px + 1vw) solid transparent;
+  border-left: calc(1px + 1vw) solid mediumseagreen;
+  border-right: calc(1px + 1vw) solid mediumseagreen;
+  border-bottom: calc(1px + 1vw) solid transparent;
+}
+
+.menu {
+  text-align: center;
+  font-size: calc(5px + 3.5vw);
+  width: calc(25px + 25vw);
+  padding-left: calc(1vw + 1vh);
+  padding-right: calc(1vw + 1vh);
+}
