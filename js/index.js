@@ -20,7 +20,7 @@ async function color() {
     var c = (((hrs * 60) + (60 - m)) / 1440) * 255;
     var cc = 255 - c;
 
-    if (h >= 19 || h < 7) { [c, cc] = [cc, c]; }
+    if (h >= 7 && h < 19) { [c, cc] = [cc, c]; }
 
     document.body.style.backgroundColor = 'rgb(' + cc + ',' + cc + ',' + cc + ')';
     x.style.color = y.style.color = z.style.color = 'rgb(' + c + ',' + c + ',' + c + ')';
