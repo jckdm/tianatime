@@ -9,10 +9,21 @@ async function color() {
     var y = document.getElementsByTagName('a')[1];
     var z = document.getElementsByTagName('a')[2];
     var d = new Date();
-    var c = (((d.getHours() * 60) + (d.getMinutes())) / 1440) * 255;
+    var h = d.getHours();
+    var m = d.getMinutes();
+    var hrs;
+
+    // 7am – 7pm
+    if (h >= 7 && h < 19) { hrs = 18 - h; }
+    // 7pm – 7am
+    if (h >= 19 || h < 7) { hrs = (h > 19) ? 7 - (23 - h) : 7 - h; }
+    var c = (((hrs * 60) + (60 - m)) / 1440) * 255;
     var cc = 255 - c;
-    document.body.style.backgroundColor = 'rgb(' + cc + ', ' + cc + ', ' + cc + ')';
-    x.style.color = y.style.color = z.style.color = 'rgb(' + c + ', ' + c + ', ' + c + ')';
+
+    if (h >= 19 || h < 7) { [c, cc] = [cc, c]; }
+
+    document.body.style.backgroundColor = 'rgb(' + cc + ',' + cc + ',' + cc + ')';
+    x.style.color = y.style.color = z.style.color = 'rgb(' + c + ',' + c + ',' + c + ')';
     await sleep(60000);
   }
 }

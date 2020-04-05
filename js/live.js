@@ -13,7 +13,7 @@ window.onload = function() {
 
 function sleep(ms) { return new Promise(resolve => setTimeout(resolve, ms)); }
 
-var s = 5000;
+var s = 7500;
 
 async function exhibit() {
   var i = 0;
@@ -25,4 +25,19 @@ async function exhibit() {
   }
 }
 
-function speed(sp) { s = (sp == 0) ? Math.min(10000,s+2500) : Math.max(0, s-2500); }
+function speed(sp) {
+  if (sp == 0) {
+    b2.disabled = false;
+    s = Math.min(12500, s+2500);
+    if (s == 10000) {
+      b1.disabled = true;
+    }
+  }
+  if (sp == 1) {
+    b1.disabled = false;
+    s = Math.max(2500, s-2500);
+    if (s == 0) {
+      b2.disabled = true;
+    }
+  }
+}
