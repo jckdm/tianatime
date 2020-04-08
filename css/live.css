@@ -33,14 +33,10 @@ body { background-color: gray; }
   max-height: 90%;
 }
 
-#btns {
+#slide, #rng, #sptxt {
   position: fixed;
-  bottom: 1vh;
   left: 1vw;
   z-index: 3;
-}
-
-#b1, #b2 {
   border: 0;
   border-radius: 0.25rem;
   background: #FFFFFF1A;
@@ -53,5 +49,16 @@ body { background-color: gray; }
   cursor: pointer;
 }
 
-#b1:hover, #b2:hover { background: #FFFFFF33; }
-#b1:active, #b2:active { transform: scale(0.97); }
+#slide, #rng {
+  bottom: 1vh;
+  width: calc(2vw + 2vh + 75px);
+}
+
+#sptxt { bottom: 5vh; }
+
+input[type='range']::-webkit-slider-runnable-track { color: #808080; }
+
+input[type="range"]::-moz-range-track {
+  background-color: #808080;
+  color: #808080;
+}

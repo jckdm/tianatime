@@ -8,6 +8,7 @@
 
 window.onload = function() {
   $('#container').flexgal();
+  color();
   exhibit();
 };
 
@@ -25,19 +26,33 @@ async function exhibit() {
   }
 }
 
-function speed(sp) {
-  if (sp == 0) {
-    b2.disabled = false;
-    s = Math.min(12500, s+2500);
-    if (s == 10000) {
-      b1.disabled = true;
-    }
-  }
-  if (sp == 1) {
-    b1.disabled = false;
-    s = Math.max(2500, s-2500);
-    if (s == 0) {
-      b2.disabled = true;
-    }
+var slider = document.getElementById("rng");
+var st = document.getElementById("sptxt");
+
+st.innerHTML = "Speed: " + slider.value;
+function update() {
+  st.innerHTML = "Speed: " + slider.value;
+  s = 12000 - (slider.value * 2000);
+}
+
+async function color() {
+  while (true) {
+    var d = new Date();
+    var h = d.getHours();
+    var m = d.getMinutes();
+    var hrs;
+
+    // 7am – 7pm
+    if (h >= 7 && h < 19) { hrs = 18 - h; }
+    // 7pm – 7am
+    if (h >= 19 || h < 7) { hrs = (h >= 19) ? 7 + (23 - h) : 7 - h; }
+    var c = (((hrs * 60) + (60 - m)) / 720) * 255;
+    var cc = 255 - c;
+
+    if (h >= 7 && h < 19) { [c, cc] = [cc, c]; } // white --> black
+
+    document.body.style.backgroundColor = 'rgb(' + cc + ',' + cc + ',' + cc + ')';
+    st.style.color = 'rgb(' + c + ',' + c + ',' + c + ')';
+    await sleep(60000);
   }
 }
