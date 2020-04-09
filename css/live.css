@@ -30,7 +30,7 @@ body { background-color: gray; }
   width: auto;
   height: auto;
   max-width: 100%;
-  max-height: 90%;
+  max-height: 85%;
 }
 
 #rng, #sptxt {
@@ -46,7 +46,7 @@ body { background-color: gray; }
   margin: 0.25rem;
   cursor: pointer;
   background-color: #3CB371BF;
-  color: #808080;
+  color: #00000080;
 }
 
 #rng {
@@ -57,10 +57,10 @@ body { background-color: gray; }
 #sptxt { bottom: 5vh; }
 
 input[type='range']::-webkit-slider-runnable-track {
-  color: #808080;
+  color: #00000080;
 }
 
 input[type="range"]::-moz-range-track {
-  background-color: #808080;
-  color: #808080;
+  background-color: #00000080;
+  color: #00000080;
 }
