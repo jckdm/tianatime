@@ -55,9 +55,6 @@ async function color() {
     var cx = 'rgb(' + c + ',' + c + ',' + c + ')';
 
     $("body").css("backgroundColor", ccx);
-    $("#sptxt").css("backgroundColor", cx);
-    $("#sptxt").css("color", ccx);
-    $("#rng").css("backgroundColor", cx);
     await sleep(60000);
   }
 }
