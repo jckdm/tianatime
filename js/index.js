@@ -1,6 +1,12 @@
 // https://www.sitepoint.com/delay-sleep-pause-wait/
 function sleep(ms) { return new Promise(resolve => setTimeout(resolve, ms)); }
 
+var iModal = document.getElementById("myModal");
+var iBtn = document.getElementById("myBtn");
+var iSpan = document.getElementsByClassName("close")[0];
+iBtn.onclick = function() { iModal.style.display = "block"; }
+iSpan.onclick = function() { iModal.style.display = "none"; }
+
 window.onload = function() { color(); };
 
 async function color() {
@@ -22,8 +28,11 @@ async function color() {
 
     if (h >= 7 && h < 19) { [c, cc] = [cc, c]; } // white --> black
 
-    document.body.style.backgroundColor = 'rgb(' + cc + ',' + cc + ',' + cc + ')';
-    x.style.color = y.style.color = z.style.color = 'rgb(' + c + ',' + c + ',' + c + ')';
+    iModal.style.backgroundColor = document.body.style.backgroundColor = 'rgb(' + cc + ',' + cc + ',' + cc + ')';
+    var cx = 'rgb(' + c + ',' + c + ',' + c + ')';
+    $('.modal-content').css("color", cx);
+    $('a').css("color", cx);
+    iBtn.style.color = x.style.color = y.style.color = z.style.color = cx;
     await sleep(60000);
   }
 }
