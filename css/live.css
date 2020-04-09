@@ -33,14 +33,12 @@ body { background-color: gray; }
   max-height: 90%;
 }
 
-#slide, #rng, #sptxt {
+#rng, #sptxt {
   position: fixed;
   left: 1vw;
   z-index: 3;
   border: 0;
   border-radius: 0.25rem;
-  background: #FFFFFF1A;
-  color: white;
   font-size: calc(10px + 0.2vw + 0.2vh);
   line-height: 1.2;
   text-decoration: none;
@@ -49,7 +47,7 @@ body { background-color: gray; }
   cursor: pointer;
 }
 
-#slide, #rng {
+#rng {
   bottom: 1vh;
   width: calc(2vw + 2vh + 75px);
 }

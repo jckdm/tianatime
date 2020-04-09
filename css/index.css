@@ -31,6 +31,7 @@ p {
 }
 
 a, a:visited { text-decoration: none; }
+a:hover { cursor: pointer; }
 .link { text-decoration: underline; }
 
 p:hover {
@@ -85,6 +86,7 @@ p:hover {
 .close:hover {
    color: #FFFFFF;
    text-decoration: none;
+   cursor: pointer;
 }
 
 .gap { padding-bottom: calc(2vh + 1vw); }

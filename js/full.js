@@ -25,7 +25,7 @@ async function color() {
 
     if (h >= 7 && h < 19) { [c, cc] = [cc, c]; } // white --> black
 
-    document.body.style.backgroundColor = 'rgb(' + cc + ',' + cc + ',' + cc + ')';
+    $("body").css("backgroundColor", 'rgb(' + cc + ',' + cc + ',' + cc + ')');
     $('p').css('color', 'rgb(' + c + ',' + c + ',' + c + ')');
     await sleep(60000);
   }

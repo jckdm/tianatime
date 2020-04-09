@@ -51,8 +51,13 @@ async function color() {
 
     if (h >= 7 && h < 19) { [c, cc] = [cc, c]; } // white --> black
 
-    document.body.style.backgroundColor = 'rgb(' + cc + ',' + cc + ',' + cc + ')';
-    st.style.color = 'rgb(' + c + ',' + c + ',' + c + ')';
+    var ccx = 'rgb(' + cc + ',' + cc + ',' + cc + ')';
+    var cx = 'rgb(' + c + ',' + c + ',' + c + ')';
+
+    $("body").css("backgroundColor", ccx);
+    $("#sptxt").css("backgroundColor", cx);
+    $("#sptxt").css("color", ccx);
+    $("#rng").css("backgroundColor", cx);
     await sleep(60000);
   }
 }
