@@ -88,7 +88,7 @@ p:hover {
    font-size: calc(20px + 1.25vw + 1.25vh);
    font-weight: bold;
    color: #FF6F61;
-}
+ }
 
 .close:hover {
    color: #FFFFFF;

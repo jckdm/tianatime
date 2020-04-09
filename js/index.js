@@ -28,6 +28,7 @@ async function color() {
     iModal.style.backgroundColor = document.body.style.backgroundColor = 'rgb(' + cc + ',' + cc + ',' + cc + ')';
     $('.modal-content').css("color", 'rgb(' + c + ',' + c + ',' + c + ')');
     $('a').css("color", 'rgb(' + c + ',' + c + ',' + c + ')');
+    $('#myBtn').css("color", "#FF6F61");
     await sleep(60000);
   }
 }
