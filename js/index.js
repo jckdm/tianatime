@@ -10,9 +10,6 @@ iSpan.onclick = function() { iModal.style.display = "none"; }
 window.onload = function() { color(); };
 
 async function color() {
-  var x = document.getElementsByTagName('a')[0];
-  var y = document.getElementsByTagName('a')[1];
-  var z = document.getElementsByTagName('a')[2];
   while (true) {
     var d = new Date();
     var h = d.getHours();
@@ -29,10 +26,8 @@ async function color() {
     if (h >= 7 && h < 19) { [c, cc] = [cc, c]; } // white --> black
 
     iModal.style.backgroundColor = document.body.style.backgroundColor = 'rgb(' + cc + ',' + cc + ',' + cc + ')';
-    var cx = 'rgb(' + c + ',' + c + ',' + c + ')';
-    $('.modal-content').css("color", cx);
-    $('a').css("color", cx);
-    iBtn.style.color = x.style.color = y.style.color = z.style.color = cx;
+    $('.modal-content').css("color", 'rgb(' + c + ',' + c + ',' + c + ')');
+    $('a').css("color", 'rgb(' + c + ',' + c + ',' + c + ')');
     await sleep(60000);
   }
 }
