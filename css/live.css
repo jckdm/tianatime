@@ -34,7 +34,7 @@ body { background-color: gray; }
 }
 
 #myBtn {
-  position: absolute;
+  position: fixed;
   bottom: 0.5vh;
   left: calc(0.75vw + 0.75vh);
   font-size: calc(7.5px + 1.5vw + 1.5vh);
