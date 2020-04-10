@@ -1,6 +1,6 @@
 # Tiana Wang: <i>Lifescapes in Time</i>
 This is a virtual exhibition by Tiana Wang.
-It was designed and written by Jack Adam (https://jackadam.cc/)
+It was designed and written by [Jack Adam](https://jackadam.cc/)
 
 The exhibition opened on May 1, 2020, amid the COVID-19 outbreak in the US, and at the end of a remotely-conducted spring semester. At a time when our peers and colleagues were spread across the globe, and the digital capacity of our university was stretched, the exhibition proposal was threefold:
 
