@@ -1,40 +1,7 @@
-body {
-  background: gray;
-  font-family: Palatino, serif;
-  -moz-user-select: none;
-  -khtml-user-select: none;
-  -webkit-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-
 p {
   font-size: calc(8px + 0.75vw + 0.75vh);
-  border-bottom: calc(1px + 1vw) solid mediumseagreen;
-  border-top: calc(1px + 1vw) solid mediumseagreen;
-  border-left: calc(1px + 1vw) solid transparent;
-  border-right: calc(1px + 1vw) solid transparent;
-  padding: calc(5px + 0.5vw);
-  width: 50%;
-  line-height: 1.5em;
+  width: calc(90px + 30vw);
 }
-
-.flex-gallery {
-  display: -webkit-flex;
-  display: flex;
-  -webkit-flex-wrap: wrap;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-}
-
-/* .image-rate{
-  position: relative;
-  overflow: hidden;
-  height: calc(20px + 20vh);
-  margin: calc(0.5vw + 5px);
-  flex-grow: 0;
-} */
 
 .image-rate img {
   max-width: 100%;

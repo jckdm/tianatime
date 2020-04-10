@@ -1,24 +1,8 @@
 $(function() {
-  $.fn.flexgal = function() {
-    $('body').prepend('<div id="fullimage" style="display: none"></div>');
-    $(this).addClass('flex-gallery');
-    $('img',this).parent().addClass('image-rate');
- }
-}(jQuery));
-
-$(function() {
   $('#container').flexgal();
   color();
   exhibit();
 })
-
-var iModal = document.getElementById("myModal");
-var iBtn = document.getElementById("myBtn");
-var iSpan = document.getElementsByClassName("close")[0];
-iBtn.onclick = function() { iModal.style.display = "block"; }
-iSpan.onclick = function() { iModal.style.display = "none"; }
-
-function sleep(ms) { return new Promise(resolve => setTimeout(resolve, ms)); }
 
 var s = 10000;
 var count = document.getElementById('counter');
@@ -37,15 +21,6 @@ async function exhibit() {
     i++;
   }
 }
-
-// var slider = document.getElementById("rng");
-// var st = document.getElementById("sptxt");
-//
-// st.innerHTML = "Speed: " + slider.value;
-// function update() {
-//   st.innerHTML = "Speed: " + slider.value;
-//   s = 12000 - (slider.value * 2000);
-// }
 
 async function color() {
   while (true) {
@@ -69,6 +44,7 @@ async function color() {
     $("body").css("backgroundColor", ccx);
     iModal.style.backgroundColor = ccx;
     $('.modal-content').css("color", cx);
+    sig.style.color = count.style.color = cx;
     $('a').css("color", cx);
     $('#myBtn').css("color", "#FF6F61");
     await sleep(60000);
