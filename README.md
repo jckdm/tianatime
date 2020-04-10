@@ -1,3 +1,4 @@
+# Tiana Wang: Lifescapes in Time
 This is a virtual exhibition by Tiana Wang.
 It was designed and written by Jack Adam (https://jackadam.cc/)
 
@@ -16,7 +17,9 @@ J.A., Apr. 2020
 
 # Live Gallery
 The live gallery is presented in two parts: 7am–7pm & 7pm–7am.
+
 The first half contains photos taken during the day, and the second half contains those taken at night.
+
 The gallery updates regularly according to the countdown clock.
 
 # Full Exhibition
