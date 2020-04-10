@@ -7,14 +7,30 @@
       <title>Live Gallery</title>
   </head>
   <body>
-    <div>
+    <!-- <div>
       <input type="range" min="1" max="5" value="3" oninput="update()" id="rng">
       <span id="sptxt">Speed: </span>
+    </div> -->
+    <a id="myBtn">?</a>
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&#9900;&#xFE0E;</span>
+            <span>The live gallery is presented in two parts: 7am–7pm & 7pm–7am.</span>
+            <div class="gap"> </div>
+            <span>The first half contains photos taken during the day, and the second half contains those taken at night.</span>
+            <div class="gap"> </div>
+            <span>The gallery updates regularly according to the countdown clock.</span>
+            <div class="smallgap"> </div>
+            <span id="sig"></span>
+      </div>
     </div>
     <div id="container" class="container">
       <figure> <img class="epix" id="0" src="img/1.jpg"> </figure>
       <figure> <img class="epix" id="1" src="img/2.jpg"> </figure>
       <figure> <img class="epix" id="2" src="img/3.jpg"> </figure>
+    </div>
+    <div>
+      <span id="counter"></span>
     </div>
   </body>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>

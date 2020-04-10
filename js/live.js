@@ -12,28 +12,40 @@ $(function() {
   exhibit();
 })
 
+var iModal = document.getElementById("myModal");
+var iBtn = document.getElementById("myBtn");
+var iSpan = document.getElementsByClassName("close")[0];
+iBtn.onclick = function() { iModal.style.display = "block"; }
+iSpan.onclick = function() { iModal.style.display = "none"; }
+
 function sleep(ms) { return new Promise(resolve => setTimeout(resolve, ms)); }
 
-var s = 7500;
+var s = 10000;
+var count = document.getElementById('counter');
+var sig = document.getElementById('sig');
 
 async function exhibit() {
   var i = 0;
   while (true) {
     $('.epix').css('display','none');
     document.getElementById(String(i%3)).style.display = 'block';
-    await sleep(s);
+    for (var j = 0; j < s / 1000; j++) {
+      count.innerHTML = "Next image in: " + ((s - (s / 10) * j) / 1000);
+      sig.innerHTML = "Next image in: " + ((s - (s / 10) * j) / 1000);
+      await sleep(1000);
+    }
     i++;
   }
 }
 
-var slider = document.getElementById("rng");
-var st = document.getElementById("sptxt");
-
-st.innerHTML = "Speed: " + slider.value;
-function update() {
-  st.innerHTML = "Speed: " + slider.value;
-  s = 12000 - (slider.value * 2000);
-}
+// var slider = document.getElementById("rng");
+// var st = document.getElementById("sptxt");
+//
+// st.innerHTML = "Speed: " + slider.value;
+// function update() {
+//   st.innerHTML = "Speed: " + slider.value;
+//   s = 12000 - (slider.value * 2000);
+// }
 
 async function color() {
   while (true) {
@@ -55,6 +67,10 @@ async function color() {
     var cx = 'rgb(' + c + ',' + c + ',' + c + ')';
 
     $("body").css("backgroundColor", ccx);
+    iModal.style.backgroundColor = ccx;
+    $('.modal-content').css("color", cx);
+    $('a').css("color", cx);
+    $('#myBtn').css("color", "#FF6F61");
     await sleep(60000);
   }
 }
