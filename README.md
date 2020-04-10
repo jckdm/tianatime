@@ -1,4 +1,4 @@
-# Tiana Wang: Lifescapes in Time
+# Tiana Wang: <i>Lifescapes in Time</i>
 This is a virtual exhibition by Tiana Wang.
 It was designed and written by Jack Adam (https://jackadam.cc/)
 
