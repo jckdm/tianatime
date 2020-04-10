@@ -10,7 +10,7 @@ The exhibition opened on May 1, 2020, amid the COVID-19 outbreak in the US, and 
 
 3.  <i>The exhibition will not (only) be an exhibition.</i>  It will be a living catalogue, a tool for sorting media, a testament to the times, and a chance to come together, albeit virtually.</span>
 
-One day, the enclosed artifacts and memories of traveling will not seem so distant a reality. Maybe then, the Ezra Stiles Art Gallery will be able to reopen its rickety doors! For now, it is my pleasure to present Tiana Wang: Lifescapes in Time.
+One day, the enclosed artifacts and memories of traveling will not seem so distant a reality. Maybe then, the [Ezra Stiles Art Gallery](https://ezrastiles.yalecollege.yale.edu/spaces/art-gallery) will be able to reopen its rickety doors! For now, it is my pleasure to present Tiana Wang: Lifescapes in Time.
 
 J.A., Apr. 2020
 
