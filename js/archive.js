@@ -1,9 +1,4 @@
 $(function() {
-  $('#container').flexgal();
-  color();
-});
-
-(function($) {
   $.fn.flexgal = function(){
     $('body').prepend('<div id="fullimage" style="display: none"></div>')
     $(this).addClass('flex-gallery');
@@ -21,6 +16,11 @@ $(function() {
    });
  }
 }(jQuery));
+
+$(function() {
+  $('#container').flexgal();
+  color();
+})
 
 function sleep(ms) { return new Promise(resolve => setTimeout(resolve, ms)); }
 
