@@ -1,4 +1,7 @@
-window.onload = function() { $('#container').flexgal(); color(); };
+$(function() {
+  $('#container').flexgal();
+  color();
+});
 
 (function($) {
   $.fn.flexgal = function(){

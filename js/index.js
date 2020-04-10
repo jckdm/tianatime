@@ -7,7 +7,7 @@ var iSpan = document.getElementsByClassName("close")[0];
 iBtn.onclick = function() { iModal.style.display = "block"; }
 iSpan.onclick = function() { iModal.style.display = "none"; }
 
-window.onload = function() { color(); };
+$(function() { color(); });
 
 async function color() {
   while (true) {
