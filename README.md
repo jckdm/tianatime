@@ -12,3 +12,13 @@ The exhibition opened on May 1, 2020, amid the COVID-19 outbreak in the US, and 
 One day, the enclosed artifacts and memories of traveling will not seem so distant a reality. Maybe then, the Ezra Stiles Art Gallery will be able to reopen its rickety doors! For now, it is my pleasure to present Tiana Wang: Lifescapes in Time.
 
 J.A., Apr. 2020
+
+
+# Live Gallery
+The live gallery is presented in two parts: 7am–7pm & 7pm–7am.
+The first half contains photos taken during the day, and the second half contains those taken at night.
+The gallery updates regularly according to the countdown clock.
+
+# Full Exhibition
+
+# Archive
