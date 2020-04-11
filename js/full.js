@@ -13,7 +13,7 @@ async function color() {
     // 7am – 7pm
     if (h >= 7 && h < 19) { hrs = 18 - h; }
     // 7pm – 7am
-    if (h >= 19 || h < 7) { hrs = (h >= 19) ? 7 + (23 - h) : 7 - h; }
+    if (h >= 19 || h < 7) { hrs = (h >= 19) ? 7 + (23 - h) : 6 - h; }
     var c = (((hrs * 60) + (60 - m)) / 720) * 255;
     var cc = 255 - c;
 
