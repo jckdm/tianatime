@@ -1,4 +1,4 @@
-$(function() { color(); });
+$(function() { color(); });s
 
 async function color() {
   while (true) {

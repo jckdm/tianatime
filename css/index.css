@@ -13,10 +13,8 @@
   bottom: calc(5px + 1vh);
   text-align: center;
   font-size: calc(10px + 2vw + 2vh);
-  left: 50%;
-  -ms-transform: translateX(-50%);
-  -webkit-transform: translate(-50%);
-  transform: translate(-50%);
+  left: 49%;
+  right: 51%;
 }
 
 p:hover {
