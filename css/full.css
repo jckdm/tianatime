@@ -8,6 +8,4 @@ p {
   max-height: 100%;
 }
 
-@media (max-width: 480px) {
-  .image-rate { height: calc(50vw - 5px); }
-}
+@media (max-width: 480px) {.image-rate { height: calc(50vw - 5px); } }
