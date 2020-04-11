@@ -45,7 +45,7 @@ a:hover { cursor: pointer; }
    border: calc(0.15vw + 0.15vh) solid #3CB371;
    font-size: calc(8px + 0.75vw);
    text-align: left;
-   color: #000000;
+   color: #333333;
    line-height: 1.25em;
 }
 

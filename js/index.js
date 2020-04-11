@@ -19,6 +19,7 @@ async function color() {
     document.body.style.backgroundColor = 'rgb(' + cc + ',' + cc + ',' + cc + ')';
     $('a').css("color", 'rgb(' + c + ',' + c + ',' + c + ')');
     $('#myBtn').css("color", "#FF6F61");
+    $('.link').css("color", "#3CB371");
     await sleep(60000);
   }
 }
