@@ -1,8 +1,7 @@
-var s = 480000;
-var count = document.getElementById('counter');
-var sig = document.getElementById('sig');
-
 async function exhibit() {
+  var s = 480000;
+  var count = document.getElementById('counter');
+  var sig = document.getElementById('sig');
   var d = new Date();
   var h = d.getHours();
   var m = d.getMinutes();
@@ -14,14 +13,15 @@ async function exhibit() {
   if (h < 7) { hrs = 6 - h; }
   var i = 180 - (Math.floor((((hrs * 60) + (60 - m)) / 1440) * 180));
   while (true) {
-    $('.epix').css('display','none');
-    document.getElementById(String(Math.max(1, i%181))).style.display = 'block';
+    var n = Math.max(1, i%181);
+    $('#container').append('<figure class="image-rate"> <img class="epix" id="' + n + '" src="img/' + n + '.png"></figure>');
     for (var j = 0; j < s / 1000; j++) {
       var next = (s - (j * 1000)) / 1000;
       count.innerHTML = "Next in: " + next;
       sig.innerHTML = "Next in: " + next;
       await sleep(1000);
     }
+    $(".image-rate").remove();
     i++;
   }
 }
