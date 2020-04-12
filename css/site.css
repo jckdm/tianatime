@@ -49,8 +49,13 @@ a:hover { cursor: pointer; }
    line-height: 1.25em;
 }
 
+#back {
+  color: #FF6F61;
+  position: fixed;
+  font-size: calc(35px + 1vw);
+}
+
 .close {
-   color: #3CB371;
    float: right;
    font-size: calc(20px + 1.25vw + 1.25vh);
    font-weight: bold;
@@ -59,7 +64,7 @@ a:hover { cursor: pointer; }
    margin-bottom: calc(1.5vw + 1.5vh);
 }
 
-.close:hover {
+.close:hover, #back:hover, #myBtn:hover {
    color: #3CB371;
    text-decoration: none;
    cursor: pointer;

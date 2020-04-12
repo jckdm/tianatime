@@ -10,6 +10,7 @@
       <title>Live Gallery</title>
   </head>
   <body>
+    <span onclick="window.history.back();return false;"id="back">&#8689;&#xFE0E;</span>
     <a id="myBtn">?</a>
     <div id="myModal" class="modal">
         <div class="modal-content">
@@ -28,10 +29,9 @@
       <figure> <img class="epix" id="1" src="img/2.jpg"> </figure>
       <figure> <img class="epix" id="2" src="img/3.jpg"> </figure>
     </div>
-    <div>
-      <span id="counter"></span>
-    </div>
+    <span id="counter"></span>
   </body>
+  <script src="js/modal.js"></script>
   <script src="js/live2.js"></script>
   <script src="js/site.js"></script>
 </html>
