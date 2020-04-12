@@ -24,7 +24,6 @@ async function color() {
     var cx = 'rgb(' + c + ',' + c + ',' + c + ')';
 
     $("body").css("backgroundColor", ccx);
-    sig.style.color = count.style.color = cx;
     $('a').css("color", cx);
     $('#myBtn').css("color", "#FF6F61");
     await sleep(60000);
