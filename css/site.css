@@ -64,7 +64,7 @@ a:hover { cursor: pointer; }
    margin-bottom: calc(1.5vw + 1.5vh);
 }
 
-.close:hover, #back:hover, #myBtn:hover {
+.close:hover, #back:hover {
    color: #3CB371;
    text-decoration: none;
    cursor: pointer;
