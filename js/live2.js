@@ -1,4 +1,4 @@
-var s = 1000;
+var s = 480000;
 var count = document.getElementById('counter');
 var sig = document.getElementById('sig');
 
@@ -11,9 +11,9 @@ async function exhibit() {
     $('.epix').css('display','none');
     document.getElementById(String(Math.max(1, i%181))).style.display = 'block';
     for (var j = 0; j < s / 1000; j++) {
-      var next = (s - (s / 10) * j) / 1000;
-      count.innerHTML = "Next image in: " + next;
-      sig.innerHTML = "Next image in: " + next;
+      var next = (s - (j * 1000)) / 1000;
+      count.innerHTML = "Next in: " + next;
+      sig.innerHTML = "Next in: " + next;
       await sleep(1000);
     }
     i++;
