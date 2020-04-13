@@ -22,6 +22,8 @@ $(function() {
   color();
 })
 
+function sleep(ms) { return new Promise(resolve => setTimeout(resolve, ms)); }
+
 async function color() {
   while (true) {
     var d = new Date();
@@ -42,4 +44,50 @@ async function color() {
     $('p').css('color', 'rgb(' + c + ',' + c + ',' + c + ')');
     await sleep(60000);
   }
+}
+
+function go(x) {
+  if (x == 1) { document.getElementById("drop1").classList.toggle("show"); }
+  else { document.getElementById("drop2").classList.toggle("show"); }
+}
+
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn1')) {
+    var dropdowns = document.getElementsByClassName("dc1");
+    for (var i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+  if (!event.target.matches('.dropbtn2')) {
+    var dropdowns = document.getElementsByClassName("dc2");
+    for (var i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+
+$(".dropdown1").mouseenter( function() {
+  $(".top-card").css("background-color", "#fffff01A");
+});
+
+$(".dropdown1").mouseout( function() {
+  $(".top-card").css("background-color", "transparent");
+});
+
+$(".dropdown2").mouseenter( function() {
+  $(".btm-card").css("background-color", "#fffff01A");
+});
+
+$(".dropdown2").mouseout( function() {
+  $(".btm-card").css("background-color", "transparent");
+});
+
+function query(n) {
+  console.log(n);
 }

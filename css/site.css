@@ -45,9 +45,7 @@ a:hover { cursor: pointer; }
    line-height: 1.25em;
 }
 
-#myBtn {
-  color: #FF6F61;
-}
+#myBtn { color: #FF6F61; }
 
 #back {
   top: 0;

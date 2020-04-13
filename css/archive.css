@@ -1,17 +1,18 @@
+body { width: 100%; }
 ::-webkit-scrollbar { display: none; }
 
 .top-card, .btm-card {
-  margin-top: calc(10px + 3vh);
-  margin-left: calc(10px + 5vw);
   display: flex;
   min-width: 100%;
   min-height: 30vh;
   overflow-x: auto;
 }
 
+.top-card { margin-top: calc(10px + 5vh); }
+.bottom-card { margin-top: calc(10px + 1vh); }
+
 .image-rate {
-  max-width: 100%;
-  min-width: calc(15px + 3vw + 30vh);
+  min-width: calc(17.5px + 3vw + 30vh);
   position: relative;
   height: calc(20px + 20vh);
   margin: calc(0.5vw + 5px);
@@ -20,7 +21,6 @@
 
 .image-rate img {
   height: 100%;
-  max-width: 100%;
   cursor: pointer;
 }
 
@@ -66,8 +66,54 @@
   font-size: calc(35px + 1vw);
 }
 
+.drops {
+  position: fixed;
+  top: 75%;
+  left: 50%;
+  -ms-transform: translateX(-50%) translateY(-75%);
+  -webkit-transform: translate(-50%,-75%);
+  transform: translate(-50%,-75%);
+}
+
+.dropbtn1, .dropbtn2 {
+  font-family: inherit;
+  background-color: #3CB371;
+  color: #00000080;
+  padding: 1.5vh 2vh;
+  font-size: calc(10px + 0.2vw + 0.2vh);
+  border: none;
+  cursor: pointer;
+}
+
+.dropbtn1:hover, .dropbtn1:focus, .dropbtn2:hover, .dropbtn2:focus { background-color: #40bf79; }
+
+.dropdown1, .dropdown2 {
+  position: relative;
+  display: inline-block;
+}
+
+.dc1, .dc2 {
+ display: none;
+ position: absolute;
+ background-color: #F0F7FF;
+ width: 100%;
+ box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+ z-index: 1;
+}
+
+.dc1 span, .dc2 span {
+ color: #00000080;
+ padding: 1.5vh 2vh;
+ display: block;
+}
+
+.dc1:hover > .top-card {
+    background-color: red;
+}
+
+.dc1 span:hover, .dc2 span:hover { background-color: #fffff0; }
+.show { display:block; }
+
 @media only screen and (max-width: 415px) {
-  .image-rate {
-    min-width: calc(25px + 12.5vw + 25vh);
-  }
+  .image-rate { min-width: calc(25px + 12.5vw + 25vh); }
 }
