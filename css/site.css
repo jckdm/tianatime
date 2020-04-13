@@ -45,6 +45,10 @@ a:hover { cursor: pointer; }
    line-height: 1.25em;
 }
 
+#myBtn {
+  color: #FF6F61;
+}
+
 #back {
   top: 0;
   left: calc(0.5vw + 0.5vh);

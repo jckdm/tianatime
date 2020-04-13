@@ -2,36 +2,52 @@
 <html lang="en-US">
   <head>
       <meta charset="UTF-8">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
       <link rel="stylesheet" type="text/css" href="css/site.css">
       <link rel="stylesheet" type="text/css" href="css/archive.css">
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
       <title>Archive</title>
   </head>
   <body>
+    <span onclick="window.history.back();return false;"id="back">&#8689;&#xFE0E;</span>
+    <a id="myBtn">?</a>
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&#9900;&#xFE0E;</span>
+            <span></span>
+            <div class="gap"> </div>
+            <span></span>
+            <div class="gap"> </div>
+            <span></span>
+      </div>
+    </div>
     <div id="container" class="container">
-      <figure> <img src="img/1.png"> </figure>
-      <figure> <img src="img/6.png"> </figure>
-      <figure> <img src="img/5.png"> </figure>
-      <figure> <img src="img/4.png"> </figure>
-      <figure> <img src="img/3.png"> </figure>
-      <figure> <img src="img/5.png"> </figure>
-      <figure> <img src="img/2.png"> </figure>
-      <figure> <img src="img/6.png"> </figure>
-      <figure> <img src="img/1.png"> </figure>
-      <figure> <img src="img/4.png"> </figure>
-      <figure> <img src="img/1.png"> </figure>
-      <figure> <img src="img/5.png"> </figure>
-      <figure> <img src="img/3.png"> </figure>
-      <figure> <img src="img/4.png"> </figure>
-      <figure> <img src="img/3.png"> </figure>
-      <figure> <img src="img/1.png"> </figure>
-      <figure> <img src="img/2.png"> </figure>
-      <figure> <img src="img/5.png"> </figure>
-      <figure> <img src="img/1.png"> </figure>
-      <figure> <img src="img/6.png"> </figure>
-      <figure> <img src="img/4.png"> </figure>
+      <div class="top-card">
+        <figure> <img src="img/10.png"> </figure>
+        <figure> <img src="img/9.png"> </figure>
+        <figure> <img src="img/8.png"> </figure>
+        <figure> <img src="img/7.png"> </figure>
+        <figure> <img src="img/6.png"> </figure>
+        <figure> <img src="img/5.png"> </figure>
+        <figure> <img src="img/4.png"> </figure>
+        <figure> <img src="img/3.png"> </figure>
+        <figure> <img src="img/2.png"> </figure>
+        <figure> <img src="img/1.png"> </figure>
+      </div>
+      <div class="btm-card">
+        <figure> <img src="img/1.png"> </figure>
+        <figure> <img src="img/2.png"> </figure>
+        <figure> <img src="img/3.png"> </figure>
+        <figure> <img src="img/4.png"> </figure>
+        <figure> <img src="img/5.png"> </figure>
+        <figure> <img src="img/6.png"> </figure>
+        <figure> <img src="img/7.png"> </figure>
+        <figure> <img src="img/8.png"> </figure>
+        <figure> <img src="img/9.png"> </figure>
+        <figure> <img src="img/10.png"> </figure>
+      </div>
     </div>
   </body>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="js/modal.js"></script>
   <script src="js/archive.js"></script>
 </html>

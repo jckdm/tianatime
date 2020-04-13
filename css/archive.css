@@ -1,51 +1,30 @@
-body {
-  background: gray;
-  font-family: Palatino, serif;
-  -moz-user-select: none;
-  -khtml-user-select: none;
-  -webkit-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
+::-webkit-scrollbar { display: none; }
 
-p {
-  font-size: calc(9px + 0.75vw);
-  border-bottom: calc(1px + 1vw) solid mediumseagreen;
-  border-top: calc(1px + 1vw) solid mediumseagreen;
-  border-left: calc(1px + 1vw) solid transparent;
-  border-right: calc(1px + 1vw) solid transparent;
-  padding: calc(5px + 0.5vw);
-  width: calc(20px + 15vw);
-  line-height: 1.25em;
-}
-
-.flex-gallery{
-  display: -webkit-flex;
+.top-card, .btm-card {
+  margin-top: calc(10px + 3vh);
+  margin-left: calc(10px + 5vw);
   display: flex;
-  -webkit-flex-wrap: wrap;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
+  min-width: 100%;
+  min-height: 30vh;
+  overflow-x: auto;
 }
 
-.image-rate{
+.image-rate {
+  max-width: 100%;
+  min-width: calc(15px + 3vw + 30vh);
   position: relative;
-  overflow: hidden;
   height: calc(20px + 20vh);
   margin: calc(0.5vw + 5px);
   flex-grow: 0;
 }
 
-.image-rate img{
-  width: auto;
+.image-rate img {
   height: 100%;
-  min-width: 100%;
   max-width: 100%;
-  object-fit: cover;
   cursor: pointer;
 }
 
-.image-rate:after{
+.image-rate:after {
   content: '';
   cursor: pointer;
   position: absolute;
@@ -56,7 +35,7 @@ p {
   opacity: 0;
 }
 
-.image-rate:hover:after{opacity: 1}
+.image-rate:hover:after { opacity: 1; }
 
 #fullimage {
   position: fixed;
@@ -80,6 +59,15 @@ p {
   max-height: 100%;
 }
 
-@media (max-width: 480px) {
-  .image-rate { height: calc(50vw - 5px); }
+#myBtn {
+  position: fixed;
+  bottom: 0;
+  left: calc(0.6vw + 0.6vh);
+  font-size: calc(35px + 1vw);
+}
+
+@media only screen and (max-width: 415px) {
+  .image-rate {
+    min-width: calc(25px + 12.5vw + 25vh);
+  }
 }
