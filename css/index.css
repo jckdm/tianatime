@@ -5,7 +5,6 @@
   -ms-transform: translateX(-50%) translateY(-50%);
   -webkit-transform: translate(-50%,-50%);
   transform: translate(-50%,-50%);
-  text-align: center;
 }
 
 .belowmenu {
@@ -17,7 +16,14 @@
   right: 51%;
 }
 
-p:hover {
+.menu {
+  border-bottom: calc(0.65vh + 0.55vw) solid #3CB371;
+  border-top: calc(0.65vh + 0.55vw) solid #3CB371;
+  border-left: calc(0.65vh + 0.55vw) solid transparent;
+  border-right: calc(0.65vh + 0.55vw) solid transparent;
+}
+
+.menu:hover {
   border-top: calc(0.65vh + 0.55vw) solid transparent;
   border-left: calc(0.65vh + 0.55vw) solid #3CB371;
   border-right: calc(0.65vh + 0.55vw) solid #3CB371;

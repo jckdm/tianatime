@@ -22,26 +22,14 @@
 
 #myBtn {
   position: fixed;
-  bottom: 0.5vh;
-  left: calc(0.75vw + 0.75vh);
+  bottom: 0;
+  left: calc(0.6vw + 0.6vh);
   font-size: calc(35px + 1vw);
 }
 
-#sig {
-  border-radius: 0.25rem;
-  font-size: calc(10px + 0.2vw + 0.2vh);
-  line-height: 1.2;
-  text-decoration: none;
-  padding: 0.3rem 0.5rem;
-  margin: 0.25rem;
-  background-color: #3CB371BF;
-  color: #00000080;
-}
-
-#counter {
+#num, #counter {
   position: fixed;
   right: 0.5vw;
-  bottom: 0.5vh;
   z-index: 3;
   border: 0;
   border-radius: 0.25rem;
@@ -53,3 +41,6 @@
   background-color: #3CB371BF;
   color: #00000080;
 }
+
+#counter { bottom: 0.5vh; }
+#num { top: 0.5vh; }

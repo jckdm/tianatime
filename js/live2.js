@@ -2,6 +2,7 @@ async function exhibit() {
   var s = 480000;
   var count = document.getElementById('counter');
   var sig = document.getElementById('sig');
+  var num = document.getElementById('num');
   var d = new Date();
   var h = d.getHours();
   var m = d.getMinutes();
@@ -18,7 +19,7 @@ async function exhibit() {
     for (var j = 0; j < s / 1000; j++) {
       var next = (s - (j * 1000)) / 1000;
       count.innerHTML = "Next in: " + next;
-      sig.innerHTML = "Next in: " + next;
+      num.innerHTML = n + " / 180";
       await sleep(1000);
     }
     $(".image-rate").remove();
