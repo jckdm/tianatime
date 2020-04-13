@@ -4,7 +4,7 @@ body { width: 100%; }
 .top-card, .btm-card {
   display: flex;
   min-width: 100%;
-  min-height: 30vh;
+  min-height: 25vh;
   overflow-x: auto;
 }
 
@@ -13,7 +13,7 @@ body { width: 100%; }
 .image-rate {
   min-width: calc(17.5px + 3vw + 30vh);
   position: relative;
-  height: calc(20px + 20vh);
+  height: calc(20px + 17.5vh);
   margin: calc(0.5vw + 5px);
   flex-grow: 0;
 }
@@ -69,11 +69,11 @@ body { width: 100%; }
   text-align: center;
   width: 100%;
   position: fixed;
-  top: 75%;
+  top: 65%;
   left: 50%;
-  -ms-transform: translateX(-50%) translateY(-75%);
-  -webkit-transform: translate(-50%,-75%);
-  transform: translate(-50%,-75%);
+  -ms-transform: translateX(-50%) translateY(-65%);
+  -webkit-transform: translate(-50%,-65%);
+  transform: translate(-50%,-65%);
 }
 
 .dropbtn1, .dropbtn2 {
