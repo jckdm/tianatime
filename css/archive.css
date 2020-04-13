@@ -67,6 +67,8 @@ body { width: 100%; }
 }
 
 .drops {
+  text-align: center;
+  width: 100%;
   position: fixed;
   top: 75%;
   left: 50%;
@@ -76,13 +78,14 @@ body { width: 100%; }
 }
 
 .dropbtn1, .dropbtn2 {
+  font-size: calc(10px + 0.2vw + 0.15vh);
   font-family: inherit;
   background-color: #3CB371;
   color: #00000080;
   padding: 1.5vh 2vh;
-  font-size: calc(10px + 0.2vw + 0.2vh);
   border: none;
   cursor: pointer;
+  width: calc(50px + 10vw + 5vh);
 }
 
 .dropbtn1:hover, .dropbtn1:focus, .dropbtn2:hover, .dropbtn2:focus { background-color: #40bf79; }
@@ -93,22 +96,20 @@ body { width: 100%; }
 }
 
 .dc1, .dc2 {
- display: none;
- position: absolute;
- background-color: #F0F7FF;
- width: 100%;
- box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
- z-index: 1;
+  display: none;
+  position: absolute;
+  background-color: #F0F7FF;
+  width: 100%;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
 }
 
 .dc1 span, .dc2 span {
- color: #00000080;
- padding: 1.5vh 2vh;
- display: block;
-}
-
-.dc1:hover > .top-card {
-    background-color: red;
+  font-size: calc(10px + 0.2vw + 0.2vh);
+  text-align: left;
+  color: #00000080;
+  padding: 1.5vh 2vh;
+  display: block;
 }
 
 .dc1 span:hover, .dc2 span:hover { background-color: #fffff0; }

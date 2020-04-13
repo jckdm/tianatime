@@ -72,21 +72,11 @@ window.onclick = function(event) {
   }
 }
 
-$(".dropdown1").mouseenter( function() {
-  $(".top-card").css("background-color", "#fffff01A");
-});
+$(".dropdown1").mouseenter( function() { $(".top-card").css("background-color", "#fffff01A"); });
+$(".dropdown1").mouseout( function() { $(".top-card").css("background-color", "transparent"); });
 
-$(".dropdown1").mouseout( function() {
-  $(".top-card").css("background-color", "transparent");
-});
-
-$(".dropdown2").mouseenter( function() {
-  $(".btm-card").css("background-color", "#fffff01A");
-});
-
-$(".dropdown2").mouseout( function() {
-  $(".btm-card").css("background-color", "transparent");
-});
+$(".dropdown2").mouseenter( function() { $(".btm-card").css("background-color", "#fffff01A"); });
+$(".dropdown2").mouseout( function() { $(".btm-card").css("background-color", "transparent"); });
 
 function query(n) {
   console.log(n);
