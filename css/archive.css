@@ -4,14 +4,14 @@ body { width: 100%; }
 .top-card, .btm-card {
   display: flex;
   min-width: 100%;
-  min-height: 25vh;
+  min-height: 26.5vh;
   overflow-x: auto;
 }
 
 .top-card { margin-top: calc(10px + 5vh); }
 
 .image-rate {
-  min-width: calc(17.5px + 3vw + 30vh);
+  min-width: calc(17.5px + 3vw + 28.5vh);
   position: relative;
   height: calc(20px + 17.5vh);
   margin: calc(0.5vw + 5px);
@@ -115,5 +115,13 @@ body { width: 100%; }
 .show { display:block; }
 
 @media only screen and (max-width: 415px) {
-  .image-rate { min-width: calc(25px + 12.5vw + 25vh); }
+  .image-rate { min-width: calc(17.5px + 3vw + 30vh); }
+  .top-card, .btm-card { min-height: 25vh; }
+  .top-card { margin-top: calc(10px + 3.5vh); }
+  .drops {
+    top: 75%;
+    -ms-transform: translateX(-50%) translateY(-75%);
+    -webkit-transform: translate(-50%,-75%);
+    transform: translate(-50%,-75%);
+  }
 }
