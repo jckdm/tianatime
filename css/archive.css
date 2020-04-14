@@ -87,8 +87,6 @@ body { width: 100%; }
   width: calc(50px + 10vw + 5vh);
 }
 
-.dropbtn1:hover, .dropbtn1:focus, .dropbtn2:hover, .dropbtn2:focus { background-color: #40bf79; }
-
 .dropdown1, .dropdown2 {
   position: relative;
   display: inline-block;
