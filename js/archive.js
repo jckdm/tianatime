@@ -17,10 +17,7 @@ $(function() {
  }
 }(jQuery));
 
-$(function() {
-  $('#container').flexgal();
-  color();
-})
+$(function() { color(); })
 
 function sleep(ms) { return new Promise(resolve => setTimeout(resolve, ms)); }
 
@@ -102,6 +99,7 @@ function query(n) {
         $(".top-card").append(pre + 7 + post);
         $(".top-card").append(pre + 9 + post);
       }
+      $('#container').flexgal();
     }
     else { $(".top-card")[0].innerHTML = ""; query(n); }
   }
@@ -121,6 +119,7 @@ function query(n) {
         $(".btm-card").append(pre + 7 + post);
         $(".btm-card").append(pre + 9 + post);
       }
+      $('#container').flexgal();
     }
     else { $(".btm-card")[0].innerHTML = ""; query(n); }
   }
