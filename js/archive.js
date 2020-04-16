@@ -79,6 +79,8 @@ $(".dropdown2").mouseenter( function() { $(".btm-card").css("background-color", 
 $(".dropdown2").mouseout( function() { $(".btm-card").css("background-color", "transparent"); });
 
 var b = true;
+var pre = '<figure class="image-rate"> <img src="img/';
+var post = '.png"></figure>';
 function query(n) {
   if (b == true) { $(".top-card, .btm-card").css("border", "none"); b = false; }
 
@@ -87,18 +89,18 @@ function query(n) {
   if (n == 0 || n == 1) {
     if (k == 0) {
       if (n == 0) {
-        $(".top-card").append('<figure class="image-rate"> <img src="img/2.png"></figure>');
-        $(".top-card").append('<figure class="image-rate"> <img src="img/4.png"></figure>');
-        $(".top-card").append('<figure class="image-rate"> <img src="img/6.png"></figure>');
-        $(".top-card").append('<figure class="image-rate"> <img src="img/8.png"></figure>');
-        $(".top-card").append('<figure class="image-rate"> <img src="img/10.png"></figure>');
+        $(".top-card").append(pre + 2 + post);
+        $(".top-card").append(pre + 4 + post);
+        $(".top-card").append(pre + 6 + post);
+        $(".top-card").append(pre + 8 + post);
+        $(".top-card").append(pre + 10 + post);
       }
       if (n == 1) {
-        $(".top-card").append('<figure class="image-rate"> <img src="img/1.png"></figure>');
-        $(".top-card").append('<figure class="image-rate"> <img src="img/3.png"></figure>');
-        $(".top-card").append('<figure class="image-rate"> <img src="img/5.png"></figure>');
-        $(".top-card").append('<figure class="image-rate"> <img src="img/7.png"></figure>');
-        $(".top-card").append('<figure class="image-rate"> <img src="img/9.png"></figure>');
+        $(".top-card").append(pre + 1 + post);
+        $(".top-card").append(pre + 3 + post);
+        $(".top-card").append(pre + 5 + post);
+        $(".top-card").append(pre + 7 + post);
+        $(".top-card").append(pre + 9 + post);
       }
     }
     else { $(".top-card")[0].innerHTML = ""; query(n); }
@@ -106,18 +108,18 @@ function query(n) {
   if (n == 2 || n == 3) {
     if (k == 0) {
       if (n == 2) {
-        $(".btm-card").append('<figure class="image-rate"> <img src="img/2.png"></figure>');
-        $(".btm-card").append('<figure class="image-rate"> <img src="img/4.png"></figure>');
-        $(".btm-card").append('<figure class="image-rate"> <img src="img/6.png"></figure>');
-        $(".btm-card").append('<figure class="image-rate"> <img src="img/8.png"></figure>');
-        $(".btm-card").append('<figure class="image-rate"> <img src="img/10.png"></figure>');
+        $(".btm-card").append(pre + 2 + post);
+        $(".btm-card").append(pre + 4 + post);
+        $(".btm-card").append(pre + 6 + post);
+        $(".btm-card").append(pre + 8 + post);
+        $(".btm-card").append(pre + 10 + post);
       }
       if (n == 3) {
-        $(".btm-card").append('<figure class="image-rate"> <img src="img/1.png"></figure>');
-        $(".btm-card").append('<figure class="image-rate"> <img src="img/3.png"></figure>');
-        $(".btm-card").append('<figure class="image-rate"> <img src="img/5.png"></figure>');
-        $(".btm-card").append('<figure class="image-rate"> <img src="img/7.png"></figure>');
-        $(".btm-card").append('<figure class="image-rate"> <img src="img/9.png"></figure>');
+        $(".btm-card").append(pre + 1 + post);
+        $(".btm-card").append(pre + 3 + post);
+        $(".btm-card").append(pre + 5 + post);
+        $(".btm-card").append(pre + 7 + post);
+        $(".btm-card").append(pre + 9 + post);
       }
     }
     else { $(".btm-card")[0].innerHTML = ""; query(n); }
