@@ -24,3 +24,9 @@ The first half contains photos taken during the day, and the second half contain
 # Full Exhibition
 
 # Archive
+
+The archive presents 180 images in two sections.
+
+The top section contains photos taken in England, and the bottom section contains those taken in China.
+
+Both sections can be queried individually using several tags.
