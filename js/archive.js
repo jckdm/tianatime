@@ -78,6 +78,48 @@ $(".dropdown1").mouseout( function() { $(".top-card").css("background-color", "t
 $(".dropdown2").mouseenter( function() { $(".btm-card").css("background-color", "#3CB37133"); });
 $(".dropdown2").mouseout( function() { $(".btm-card").css("background-color", "transparent"); });
 
+var b = true;
 function query(n) {
-  console.log(n);
+  if (b == true) { $(".top-card, .btm-card").css("border", "none"); b = false; }
+
+  var k = (n == 0 || n == 1) ? $(".top-card")[0].childElementCount : $(".btm-card")[0].childElementCount;
+
+  if (n == 0 || n == 1) {
+    if (k == 0) {
+      if (n == 0) {
+        $(".top-card").append('<figure class="image-rate"> <img src="img/2.png"></figure>');
+        $(".top-card").append('<figure class="image-rate"> <img src="img/4.png"></figure>');
+        $(".top-card").append('<figure class="image-rate"> <img src="img/6.png"></figure>');
+        $(".top-card").append('<figure class="image-rate"> <img src="img/8.png"></figure>');
+        $(".top-card").append('<figure class="image-rate"> <img src="img/10.png"></figure>');
+      }
+      if (n == 1) {
+        $(".top-card").append('<figure class="image-rate"> <img src="img/1.png"></figure>');
+        $(".top-card").append('<figure class="image-rate"> <img src="img/3.png"></figure>');
+        $(".top-card").append('<figure class="image-rate"> <img src="img/5.png"></figure>');
+        $(".top-card").append('<figure class="image-rate"> <img src="img/7.png"></figure>');
+        $(".top-card").append('<figure class="image-rate"> <img src="img/9.png"></figure>');
+      }
+    }
+    else { $(".top-card")[0].innerHTML = ""; query(n); }
+  }
+  if (n == 2 || n == 3) {
+    if (k == 0) {
+      if (n == 2) {
+        $(".btm-card").append('<figure class="image-rate"> <img src="img/2.png"></figure>');
+        $(".btm-card").append('<figure class="image-rate"> <img src="img/4.png"></figure>');
+        $(".btm-card").append('<figure class="image-rate"> <img src="img/6.png"></figure>');
+        $(".btm-card").append('<figure class="image-rate"> <img src="img/8.png"></figure>');
+        $(".btm-card").append('<figure class="image-rate"> <img src="img/10.png"></figure>');
+      }
+      if (n == 3) {
+        $(".btm-card").append('<figure class="image-rate"> <img src="img/1.png"></figure>');
+        $(".btm-card").append('<figure class="image-rate"> <img src="img/3.png"></figure>');
+        $(".btm-card").append('<figure class="image-rate"> <img src="img/5.png"></figure>');
+        $(".btm-card").append('<figure class="image-rate"> <img src="img/7.png"></figure>');
+        $(".btm-card").append('<figure class="image-rate"> <img src="img/9.png"></figure>');
+      }
+    }
+    else { $(".btm-card")[0].innerHTML = ""; query(n); }
+  }
 }

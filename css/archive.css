@@ -4,8 +4,9 @@ body { width: 100%; }
 .top-card, .btm-card {
   display: flex;
   min-width: 100%;
-  min-height: 26.5vh;
+  min-height: 25vh;
   overflow-x: auto;
+  border: calc(0.1vw + 0.1vh) dashed #3CB37133;
 }
 
 .top-card { margin-top: calc(10px + 5vh); }
@@ -110,7 +111,7 @@ body { width: 100%; }
 }
 
 .dc1 span:hover, .dc2 span:hover { background-color: #fffff0; }
-.show { display:block; }
+.show { display: block; }
 
 @media only screen and (max-width: 415px) {
   .image-rate { min-width: calc(17.5px + 3vw + 30vh); }
