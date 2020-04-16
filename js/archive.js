@@ -78,26 +78,24 @@ $(".dropdown2").mouseout( function() { $(".btm-card").css("background-color", "t
 var b = true;
 var pre = '<figure class="image-rate"> <img src="img/';
 var post = '.png"></figure>';
+var zero = [2, 4, 6, 8, 10];
+var one = [1, 3, 5, 7, 9];
+
 function query(n) {
   if (b == true) { $(".top-card, .btm-card").css("border", "none"); b = false; }
-
   var k = (n == 0 || n == 1) ? $(".top-card")[0].childElementCount : $(".btm-card")[0].childElementCount;
 
   if (n == 0 || n == 1) {
     if (k == 0) {
       if (n == 0) {
-        $(".top-card").append(pre + 2 + post);
-        $(".top-card").append(pre + 4 + post);
-        $(".top-card").append(pre + 6 + post);
-        $(".top-card").append(pre + 8 + post);
-        $(".top-card").append(pre + 10 + post);
+        for (var i = 0; i < 5; i++) {
+          $(".top-card").append(pre + zero[i] + post);
+        }
       }
       if (n == 1) {
-        $(".top-card").append(pre + 1 + post);
-        $(".top-card").append(pre + 3 + post);
-        $(".top-card").append(pre + 5 + post);
-        $(".top-card").append(pre + 7 + post);
-        $(".top-card").append(pre + 9 + post);
+        for (var i = 0; i < 5; i++) {
+          $(".top-card").append(pre + one[i] + post);
+        }
       }
       $('#container').flexgal();
     }
@@ -106,18 +104,14 @@ function query(n) {
   if (n == 2 || n == 3) {
     if (k == 0) {
       if (n == 2) {
-        $(".btm-card").append(pre + 2 + post);
-        $(".btm-card").append(pre + 4 + post);
-        $(".btm-card").append(pre + 6 + post);
-        $(".btm-card").append(pre + 8 + post);
-        $(".btm-card").append(pre + 10 + post);
+        for (var i = 0; i < 5; i++) {
+          $(".btm-card").append(pre + zero[i] + post);
+        }
       }
       if (n == 3) {
-        $(".btm-card").append(pre + 1 + post);
-        $(".btm-card").append(pre + 3 + post);
-        $(".btm-card").append(pre + 5 + post);
-        $(".btm-card").append(pre + 7 + post);
-        $(".btm-card").append(pre + 9 + post);
+        for (var i = 0; i < 5; i++) {
+          $(".btm-card").append(pre + one[i] + post);
+        }
       }
       $('#container').flexgal();
     }
