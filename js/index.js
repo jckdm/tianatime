@@ -17,12 +17,14 @@ async function color() {
     if (h >= 7 && h < 19) { [c, cc] = [cc, c]; } // white --> black
 
     var cx = 'rgb(' + c + ',' + c + ',' + c + ')';
+    var ccx = 'rgb(' + cc + ',' + cc + ',' + cc + ')';
 
-    document.body.style.backgroundColor = 'rgb(' + cc + ',' + cc + ',' + cc + ')';
+    $("body").css("backgroundColor", ccx);
     $('a').css("color", cx);
     $('.tit').css("color", cx);
     $('#myBtn').css("color", "#FF6F61");
     $('.link').css("color", "#3CB371");
+    $('.modal').css("background-color", ccx);
     await sleep(60000);
   }
 }

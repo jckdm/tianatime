@@ -2,18 +2,29 @@
   position: fixed;
   top: 50%;
   left: 50%;
-  -ms-transform: translateX(-50%) translateY(-50%);
   -webkit-transform: translate(-50%,-50%);
   transform: translate(-50%,-50%);
 }
 
-.belowmenu {
+#tit {
+  text-align: center;
+  color: #FF6F61;
+  position: fixed;
+  font-size: calc(5px + 1vw + 1vh);
+  left: 50%;
+  top: calc(5px + 1vh);
+  -webkit-transform: translate(-50%);
+  transform: translate(-50%);
+  width: 100%;
+}
+
+#myBtn {
   position: fixed;
   bottom: calc(5px + 1vh);
-  text-align: center;
-  font-size: calc(10px + 2vw + 2vh);
-  left: 49%;
-  right: 51%;
+  font-size: calc(7.5px + 1vw + 1vh);
+  left: 50%;
+  -webkit-transform: translate(-50%);
+  transform: translate(-50%);
 }
 
 .menu {
