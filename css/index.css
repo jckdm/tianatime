@@ -36,10 +36,10 @@
 }
 
 .menu:hover {
+  border-bottom: calc(0.50vh + 0.50vw) solid transparent;
   border-top: calc(0.50vh + 0.50vw) solid transparent;
   border-left: calc(0.50vh + 0.50vw) solid #3CB371;
   border-right: calc(0.50vh + 0.50vw) solid #3CB371;
-  border-bottom: calc(0.50vh + 0.50vw) solid transparent;
 }
 
 .menu {
