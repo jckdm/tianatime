@@ -37,8 +37,11 @@ async function color() {
 
     if (h >= 7 && h < 19) { [c, cc] = [cc, c]; } // white --> black
 
-    $("body").css("backgroundColor", 'rgb(' + cc + ',' + cc + ',' + cc + ')');
+    var ccx = 'rgb(' + cc + ',' + cc + ',' + cc + ')';
+
+    $("body").css("backgroundColor", ccx);
     $('p').css('color', 'rgb(' + c + ',' + c + ',' + c + ')');
+    $('.modal').css("backgroundColor", ccx);
     await sleep(60000);
   }
 }

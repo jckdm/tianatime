@@ -24,6 +24,7 @@ async function color() {
     var cx = 'rgb(' + c + ',' + c + ',' + c + ')';
 
     $("body").css("backgroundColor", ccx);
+    $('.modal').css("background-color", ccx);
     await sleep(60000);
   }
 }

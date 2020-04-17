@@ -28,7 +28,7 @@ a:hover { cursor: pointer; }
    height: 100%;
    overflow: auto;
    padding-top: calc(15px + 4vh + 4vw);
-   background-color: #808080;
+
 }
 .modal-content {
    background-color: #F0F7FF;
