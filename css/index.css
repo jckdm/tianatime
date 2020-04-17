@@ -9,36 +9,37 @@
 #tit {
   text-align: center;
   color: #FF6F61;
-  position: fixed;
-  font-size: calc(5px + 1vw + 1vh);
-  left: 50%;
   top: calc(5px + 1vh);
   -webkit-transform: translate(-50%);
   transform: translate(-50%);
   width: 100%;
 }
 
-#myBtn {
+#tit, #myBtn {
+  letter-spacing: 0.05vw;
   position: fixed;
-  bottom: calc(5px + 1vh);
-  font-size: calc(7.5px + 1vw + 1vh);
+  font-size: calc(5px + 0.85vw + 0.85vh);
   left: 50%;
+}
+
+#myBtn {
+  bottom: calc(5px + 1vh);
   -webkit-transform: translate(-50%);
   transform: translate(-50%);
 }
 
 .menu {
-  border-bottom: calc(0.65vh + 0.55vw) solid #3CB371;
-  border-top: calc(0.65vh + 0.55vw) solid #3CB371;
-  border-left: calc(0.65vh + 0.55vw) solid transparent;
-  border-right: calc(0.65vh + 0.55vw) solid transparent;
+  border-bottom: calc(0.50vh + 0.50vw) solid #3CB371;
+  border-top: calc(0.50vh + 0.50vw) solid #3CB371;
+  border-left: calc(0.50vh + 0.50vw) solid transparent;
+  border-right: calc(0.50vh + 0.50vw) solid transparent;
 }
 
 .menu:hover {
-  border-top: calc(0.65vh + 0.55vw) solid transparent;
-  border-left: calc(0.65vh + 0.55vw) solid #3CB371;
-  border-right: calc(0.65vh + 0.55vw) solid #3CB371;
-  border-bottom: calc(0.65vh + 0.55vw) solid transparent;
+  border-top: calc(0.50vh + 0.50vw) solid transparent;
+  border-left: calc(0.50vh + 0.50vw) solid #3CB371;
+  border-right: calc(0.50vh + 0.50vw) solid #3CB371;
+  border-bottom: calc(0.50vh + 0.50vw) solid transparent;
 }
 
 .menu {
