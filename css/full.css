@@ -3,19 +3,34 @@ p {
   width: calc(90px + 30vw);
 }
 
+a { color: #FF6F61; }
+a:hover { color: #3CB371; }
+
+#nav {
+  font-size: calc(8px + 0.8vw + 0.8vh);
+  position: fixed;
+  left: calc(0.6vw + 0.6vh);
+  top: 15%;
+}
+
+#curr { color: #3CB371; }
+#curr:hover { cursor: auto; }
+
 #aud {
   color: #3CB371;
   top: calc(15px + 15vh);
   width: 100%;
-  left: calc(0.5vw + 0.5vh);
+  right: calc(0.5vw + 0.5vh);
   position: -webkit-sticky;
   position: sticky;
   font-size: calc(35px + 1vw);
+  text-align: right;
 }
 
 .image-rate img {
-  max-width: 100%;
+  float: right;
+  max-width: 98%;
   max-height: 100%;
 }
 
-@media (max-width: 480px) {.image-rate { height: calc(50vw - 5px); } }
+@media (max-width: 480px) { .image-rate { height: calc(50vw - 5px); } }
