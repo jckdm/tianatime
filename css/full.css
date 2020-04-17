@@ -10,7 +10,7 @@ a:hover { color: #3CB371; }
   font-size: calc(8px + 0.8vw + 0.8vh);
   position: fixed;
   left: calc(0.6vw + 0.6vh);
-  top: 15%;
+  top: 20%;
 }
 
 #curr { color: #3CB371; }
@@ -18,9 +18,8 @@ a:hover { color: #3CB371; }
 
 #aud {
   color: #3CB371;
-  top: calc(15px + 15vh);
+  top: 18.5%;
   width: 100%;
-  right: calc(0.5vw + 0.5vh);
   position: -webkit-sticky;
   position: sticky;
   font-size: calc(35px + 1vw);
