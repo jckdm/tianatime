@@ -30,7 +30,7 @@
 #num, #counter {
   position: fixed;
   right: 0.5vw;
-  z-index: 3;
+  z-index: 5;
   border: 0;
   border-radius: 0.25rem;
   font-size: calc(10px + 0.2vw + 0.2vh);
