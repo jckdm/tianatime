@@ -17,6 +17,7 @@ a:hover { color: #3CB371; }
 #curr:hover { cursor: auto; }
 
 #aud {
+  width: calc(10px + 2.5vh + 1.75vw);
   padding-top: calc(1.5vw + 1.5vh);
   padding-bottom: calc(1.5vw + 1.5vh);
   color: #3CB371;
