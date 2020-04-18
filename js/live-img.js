@@ -3,7 +3,6 @@ async function exhibit() {
   var sig = document.getElementById('sig');
   var num = document.getElementById('num');
   var d = new Date();
-  console.log(d);
   var h = d.getHours();
   var m = d.getMinutes();
   var hrs;
