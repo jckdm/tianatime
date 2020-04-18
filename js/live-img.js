@@ -2,7 +2,7 @@ async function exhibit() {
   var count = document.getElementById('counter');
   var sig = document.getElementById('sig');
   var num = document.getElementById('num');
-  var d = new Date(2020, 01, 01, 6, 52, 00, 00);
+  var d = new Date();
   console.log(d);
   var h = d.getHours();
   var m = d.getMinutes();
