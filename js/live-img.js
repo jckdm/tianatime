@@ -14,9 +14,11 @@ async function exhibit() {
   var i = 180 - (Math.floor((((hrs * 60) + (60 - m)) / 1440) * 180));
   while (true) {
     var n = Math.max(1, i%181);
+    var y = ((60 * h) + m)/8;
+    var x = Math.max(1, 8 - ((y - Math.floor(y)) * 8));
     $('#container').append('<figure class="image-rate"> <img class="epix" id="' + n + '" src="img/' + n + '.png"></figure>');
-    for (var j = 0; j < 8; j++) {
-      count.innerHTML = "Next in: " + (8 - j) + " min.";
+    for (var j = 0; j < x; j++) {
+      count.innerHTML = "Next in: " + (x - j) + " min.";
       num.innerHTML = n + " / 180";
       await sleep(60000);
     }
