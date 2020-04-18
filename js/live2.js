@@ -1,5 +1,4 @@
 async function exhibit() {
-  var s = 480000;
   var count = document.getElementById('counter');
   var sig = document.getElementById('sig');
   var num = document.getElementById('num');
@@ -16,11 +15,10 @@ async function exhibit() {
   while (true) {
     var n = Math.max(1, i%181);
     $('#container').append('<figure class="image-rate"> <img class="epix" id="' + n + '" src="img/' + n + '.png"></figure>');
-    for (var j = 0; j < s / 1000; j++) {
-      var next = (s - (j * 1000)) / 1000;
-      count.innerHTML = "Next in: " + next;
+    for (var j = 0; j < 8; j++) {
+      count.innerHTML = "Next in: " + (8 - j) + " min.";
       num.innerHTML = n + " / 180";
-      await sleep(1000);
+      await sleep(60000);
     }
     $(".image-rate").remove();
     i++;
