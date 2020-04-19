@@ -15,11 +15,11 @@ One day, the enclosed artifacts and memories of traveling will not seem so dista
 J.A., Apr. 2020
 
 # Live Gallery
-The live gallery presents 180 images in two parts: 7am–7pm & 7pm–7am.
+The live gallery presents 180 images in two parts: 6am–10pm & 10pm–6am.
 
 It updates every 8 minutes according to the countdown clock.
 
-The first half contains photos taken during the day, and the second half contains those taken at night.
+The first part contains photos taken during the day, and the second part contains those taken at night.
 
 # Full Exhibition
 

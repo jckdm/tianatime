@@ -4,23 +4,18 @@ $(function() {
 })
 
 async function color() {
+  var bg, fg;
   while (true) {
     var d = new Date();
     var h = d.getHours();
     var m = d.getMinutes();
-    var hrs;
 
-    // 7am – 7pm
-    if (h >= 7 && h < 19) { hrs = 18 - h; }
-    // 7pm – 7am
-    if (h >= 19 || h < 7) { hrs = (h >= 19) ? 7 + (23 - h) : 6 - h; }
-    var c = (((hrs * 60) + (60 - m)) / 720) * 255;
-    var cc = 255 - c;
-
-    if (h >= 7 && h < 19) { [c, cc] = [cc, c]; } // white --> black
-
-    $("body").css("backgroundColor", 'rgb(' + cc + ',' + cc + ',' + cc + ')');
-    $('p').css('color', 'rgb(' + c + ',' + c + ',' + c + ')');
+    // 6am - 10pm
+    if (h >= 6 && h < 22) { bg = "#FFFFFF"; fg = "#000000"; }
+    if (h >= 22 || h < 6) { bg = "#000000"; fg = "#FFFFFF"; }
+    
+    $("body").css("backgroundColor", bg);
+    $('p').css('color', fg);
     await sleep(60000);
   }
 }
