@@ -1,16 +1,18 @@
 async function exhibit() {
   var count = document.getElementById('counter');
   var num = document.getElementById('num');
-  var d = new Date();
+  var d = new Date(); //2020, 01, 01, 06, 00, 00, 000
   var h = d.getHours();
   var m = d.getMinutes();
+  var s = d.getSeconds();
   var hrs;
 
   // 6am – 12am
   if (h >= 6) { hrs = 6 + (23 - h); }
   // 12am – 6am
   if (h < 6) { hrs = 5 - h; }
-  var i = 180 - (Math.floor((((hrs * 60) + (60 - m)) / 1440) * 180));
+  var i = 180 - (Math.floor((((hrs * 60) + (59 - m) + ((60 - s) / 60)) / 1440) * 180));
+
   while (true) {
     var n = Math.max(1, i%181);
     var y = (((23 - hrs) * 60) + m)/8;
