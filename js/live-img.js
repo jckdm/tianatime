@@ -13,6 +13,7 @@ async function exhibit() {
     var i = 180 - (Math.floor((((hrs * 60) + (59 - m) + ((60 - s) / 60)) / 1440) * 180));
     var n = Math.max(1, i%181);
     $('#container').append('<figure class="image-rate"> <img class="epix" id="' + n + '" src="img/' + n + '.png"></figure>');
+    $("#num").html(n + " / 180");
 
     var y = (((23 - hrs) * 60) + m + (s / 60)) / 8;
     var xs = Math.round(60 * (8 - (y - Math.floor(y)) * 8));
@@ -23,10 +24,8 @@ async function exhibit() {
 
     var mins = Math.floor((distance % 3600000) / 60000);
     var secs = Math.floor((distance % 60000) / 1000);
-
     secs = (String(secs).length == 1) ? "0" + secs : secs;
     $("#counter").html("Next in: " + mins + ":" + secs);
-    $("#num").html(n + " / 180");
 
     if (mins == 0 && secs == "00") { $(".image-rate").remove(); }
     await sleep(1000);
