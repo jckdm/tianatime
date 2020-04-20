@@ -1,29 +1,34 @@
 async function exhibit() {
-  var count = document.getElementById('counter');
-  var num = document.getElementById('num');
-  var d = new Date(); //2020, 01, 01, 06, 00, 00, 000
-  var h = d.getHours();
-  var m = d.getMinutes();
-  var s = d.getSeconds();
-  var hrs;
-
-  // 6am – 12am
-  if (h >= 6) { hrs = 6 + (23 - h); }
-  // 12am – 6am
-  if (h < 6) { hrs = 5 - h; }
-  var i = 180 - (Math.floor((((hrs * 60) + (59 - m) + ((60 - s) / 60)) / 1440) * 180));
-
   while (true) {
+    var d = new Date();
+    var h = d.getHours();
+    var m = d.getMinutes();
+    var s = d.getSeconds();
+    var hrs;
+
+    // 6am – 12am
+    if (h >= 6) { hrs = 6 + (23 - h); }
+    // 12am – 6am
+    if (h < 6) { hrs = 5 - h; }
+    var i = 180 - (Math.floor((((hrs * 60) + (59 - m) + ((60 - s) / 60)) / 1440) * 180));
     var n = Math.max(1, i%181);
-    var y = (((23 - hrs) * 60) + m)/8;
-    var x = Math.max(1, (8 - (y - Math.floor(y)) * 8));
     $('#container').append('<figure class="image-rate"> <img class="epix" id="' + n + '" src="img/' + n + '.png"></figure>');
-    for (var j = 0; j < x; j++) {
-      count.innerHTML = "Next in: " + (x - j) + " min.";
-      num.innerHTML = n + " / 180";
-      await sleep(60000);
-    }
-    $(".image-rate").remove();
-    i++;
+
+    var y = (((23 - hrs) * 60) + m + (s / 60)) / 8;
+    var xs = Math.round(60 * (8 - (y - Math.floor(y)) * 8));
+    var countDownTime = d;
+    countDownTime.setSeconds(s + xs);
+    var now = new Date();
+    var distance = countDownTime - now;
+
+    var mins = Math.floor((distance % 3600000) / 60000);
+    var secs = Math.floor((distance % 60000) / 1000);
+
+    secs = (String(secs).length == 1) ? "0" + secs : secs;
+    $("#counter").html("Next in: " + mins + ":" + secs);
+    $("#num").html(n + " / 180");
+
+    if (mins == 0 && secs == "00") { $(".image-rate").remove(); }
+    await sleep(1000);
   }
 }
