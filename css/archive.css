@@ -37,7 +37,6 @@
 .image-rate:hover:after { opacity: 1; }
 
 #fullimage {
-  background-color: #000000;
   position: fixed;
   z-index: 999;
   top: 0;
