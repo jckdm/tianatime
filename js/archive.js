@@ -75,7 +75,7 @@ $(".dropdown2").mouseout( function() { $(".btm-card").css("background-color", "t
 
 var b = true;
 var pre = '<figure class="image-rate"> <img src="img/';
-var post = '.png"></figure>';
+var post = '.jpg"></figure>';
 var zero = [2, 4, 6, 8, 10];
 var one = [1, 3, 5, 7, 9];
 
