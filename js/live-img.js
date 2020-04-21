@@ -29,6 +29,6 @@ async function exhibit() {
     $("#counter").html("Next in: " + mins + ":" + secs);
 
     if (mins == 0 && secs == "00") { $(".image-rate").remove(); }
-    await sleep(1000);
+    else { await sleep(1000); }
   }
 }
