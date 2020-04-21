@@ -10,7 +10,7 @@ async function exhibit() {
     if (h >= 6) { hrs = 6 + (23 - h); }
     // 12am – 6am
     if (h < 6) { hrs = 5 - h; }
-    var i = 180 - (Math.floor((((hrs * 60) + (59 - m) + ((60 - s) / 60)) / 1440) * 180));
+    var i = Math.ceil(180 - ((((hrs * 60) + (59 - m) + ((60 - (s+1)) / 60)) / 1440) * 180));
     var n = Math.max(1, i%181);
     $('#container').html("");
     $('#container').append('<figure class="image-rate"> <img class="epix" id="' + n + '" src="img/' + n + '.jpg"></figure>');
