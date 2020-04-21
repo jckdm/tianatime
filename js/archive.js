@@ -82,9 +82,9 @@ var one = [1, 3, 5, 7, 9];
 
 function query(n) {
   if (b == true) { $(".top-card, .btm-card").css("border", "none"); b = false; }
-  var k = (n == 0 || n == 1) ? $(".top-card")[0].childElementCount : $(".btm-card")[0].childElementCount;
+  var k = (n <= 4) ? $(".top-card")[0].childElementCount : $(".btm-card")[0].childElementCount;
 
-  if (n == 0 || n == 1) {
+  if (n <= 4) {
     if (k == 0) {
       if (n == 0) {
         for (var i = 0; i < 5; i++) {
@@ -100,14 +100,14 @@ function query(n) {
     }
     else { $(".top-card")[0].innerHTML = ""; query(n); }
   }
-  if (n == 2 || n == 3) {
+  if (n > 4) {
     if (k == 0) {
-      if (n == 2) {
+      if (n == 5) {
         for (var i = 0; i < 5; i++) {
           $(".btm-card").append(pre + zero[i] + post);
         }
       }
-      if (n == 3) {
+      if (n == 6) {
         for (var i = 0; i < 5; i++) {
           $(".btm-card").append(pre + one[i] + post);
         }
