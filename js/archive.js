@@ -6,6 +6,7 @@ $(function() {
 
    $('.image-rate').click(function() {
      color(); // fixes background of fullimage
+     $('#fullimage').html("");
      $('img', this).clone().prependTo('#fullimage');
      $("#fullimage").fadeIn(200);
    });
