@@ -88,32 +88,30 @@ var _7 = [61, 33, 5, 7, 9];
 var _8 = [71, 93, 5, 7, 109];
 var _9 = [81, 13, 75, 7, 9];
 
-var england = china =  -1;
+var last;
 
 function query(n) {
   if (b == true) { $(".top-card, .btm-card").css("border", "none"); b = false; }
-  var k = (n <= 4) ? $(".top-card")[0].childElementCount : $(".btm-card")[0].childElementCount;
+  var card;
 
-  if (n <= 4) {
-    if (k == 0) {
-      $("#fullimage").remove();
-      england = n;
-      var l = eval("_" + n);
-      var x = l.length;
-      for (var i = 0; i < x; i++) { $(".top-card").append(pre + l[i] + post); }
-      $('#container').flexgal();
+  if (n <= 4) { card = ".top-card"; }
+  if (n > 4) { card = ".btm-card"; }
+  var k = $(card)[0].childElementCount;
+
+  if (k == 0) {
+    $("#fullimage").remove();
+    last = n;
+    var l = eval("_" + n);
+    var x = l.length;
+    for (var i = 0; i < x; i++) {
+      $(card).append(pre + l[i] + post);
     }
-    else { if (n != england) { $(".top-card")[0].innerHTML = ""; query(n); } }
+    $('#container').flexgal();
   }
-  if (n > 4) {
-    if (k == 0) {
-      $("#fullimage").remove();
-      china = n;
-      var l = eval("_" + n);
-      var x = l.length;
-      for (var i = 0; i < x; i++) { $(".btm-card").append(pre + l[i] + post); }
-      $('#container').flexgal();
+  else if (k != 0) {
+    if (n != last) {
+      $(card)[0].innerHTML = "";
+      query(n);
     }
-    else { if (n != china) { $(".btm-card")[0].innerHTML = ""; query(n); } }
   }
 }
