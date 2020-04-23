@@ -93,7 +93,6 @@ var last;
 function query(n) {
   if (b == true) { $(".top-card, .btm-card").css("border", "none"); b = false; }
   var card;
-
   if (n <= 4) { card = ".top-card"; }
   if (n > 4) { card = ".btm-card"; }
   var k = $(card)[0].childElementCount;
@@ -103,15 +102,10 @@ function query(n) {
     last = n;
     var l = eval("_" + n);
     var x = l.length;
-    for (var i = 0; i < x; i++) {
-      $(card).append(pre + l[i] + post);
-    }
+    for (var i = 0; i < x; i++) { $(card).append(pre + l[i] + post); }
     $('#container').flexgal();
   }
-  else if (k != 0) {
-    if (n != last) {
-      $(card)[0].innerHTML = "";
-      query(n);
-    }
+  else {
+    if (n != last) { $(card)[0].innerHTML = ""; query(n); }
   }
 }
