@@ -6,7 +6,7 @@ $(function() {
 
    $('.image-rate').click(function() {
      color(); // fixes background of fullimage
-     $('#fullimage').html("");
+     $('#fullimage').html(""); // fixes multiple appends
      $('img', this).clone().prependTo('#fullimage');
      $("#fullimage").fadeIn(200);
    });
@@ -77,8 +77,18 @@ $(".dropdown2").mouseout( function() { $(".btm-card").css("background-color", "t
 var b = true;
 var pre = '<figure class="image-rate"> <img src="img/';
 var post = '.jpg"></figure>';
-var zero = [2, 4, 6, 8, 10];
-var one = [1, 3, 5, 7, 9];
+var _0 = [2, 4, 6, 8, 10];
+var _1 = [1, 3, 5, 7, 9];
+var _2 = [101, 3, 51, 7, 93];
+var _3 = [21, 3, 85, 7, 9];
+var _4 = [31, 33, 5, 7, 89];
+var _5 = [41, 43, 25, 7, 9];
+var _6 = [41, 23, 15, 7, 19];
+var _7 = [61, 33, 5, 7, 9];
+var _8 = [71, 93, 5, 7, 109];
+var _9 = [81, 13, 75, 7, 9];
+
+var england = china =  -1;
 
 function query(n) {
   if (b == true) { $(".top-card, .btm-card").css("border", "none"); b = false; }
@@ -86,34 +96,24 @@ function query(n) {
 
   if (n <= 4) {
     if (k == 0) {
-      if (n == 0) {
-        for (var i = 0; i < 5; i++) {
-          $(".top-card").append(pre + zero[i] + post);
-        }
-      }
-      if (n == 1) {
-        for (var i = 0; i < 5; i++) {
-          $(".top-card").append(pre + one[i] + post);
-        }
-      }
+      $("#fullimage").remove();
+      england = n;
+      var l = eval("_" + n);
+      var x = l.length;
+      for (var i = 0; i < x; i++) { $(".top-card").append(pre + l[i] + post); }
       $('#container').flexgal();
     }
-    else { $(".top-card")[0].innerHTML = ""; query(n); }
+    else { if (n != england) { $(".top-card")[0].innerHTML = ""; query(n); } }
   }
   if (n > 4) {
     if (k == 0) {
-      if (n == 5) {
-        for (var i = 0; i < 5; i++) {
-          $(".btm-card").append(pre + zero[i] + post);
-        }
-      }
-      if (n == 6) {
-        for (var i = 0; i < 5; i++) {
-          $(".btm-card").append(pre + one[i] + post);
-        }
-      }
+      $("#fullimage").remove();
+      china = n;
+      var l = eval("_" + n);
+      var x = l.length;
+      for (var i = 0; i < x; i++) { $(".btm-card").append(pre + l[i] + post); }
       $('#container').flexgal();
     }
-    else { $(".btm-card")[0].innerHTML = ""; query(n); }
+    else { if (n != china) { $(".btm-card")[0].innerHTML = ""; query(n); } }
   }
 }
