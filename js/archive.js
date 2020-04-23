@@ -99,10 +99,10 @@ function query(n) {
 
   if (k == 0) {
     $("#fullimage").remove();
-    last = n;
     var l = eval("_" + n);
     var x = l.length;
     for (var i = 0; i < x; i++) { $(card).append(pre + l[i] + post); }
+    last = n;
     $('#container').flexgal();
   }
   else {
