@@ -92,9 +92,7 @@ var last;
 
 function query(n) {
   if (b == true) { $(".top-card, .btm-card").css("border", "none"); b = false; }
-  var card;
-  if (n <= 4) { card = ".top-card"; }
-  if (n > 4) { card = ".btm-card"; }
+  var card = (n <= 4) ? ".top-card" : ".btm-card";
   var k = $(card)[0].childElementCount;
 
   if (k == 0) {
