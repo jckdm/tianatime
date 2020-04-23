@@ -103,7 +103,5 @@ function query(n) {
     last = n;
     $('#container').flexgal();
   }
-  else {
-    if (n != last) { $(card)[0].innerHTML = ""; query(n); }
-  }
+  else if (n != last) { $(card)[0].innerHTML = ""; query(n); }
 }
