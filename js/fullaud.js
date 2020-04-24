@@ -1,7 +1,7 @@
-var a = document.getElementById('audio');
 var on = false;
 
 async function play() {
+  var a = document.getElementById('audio');
   if (on == true) {
     on = false;
     a.pause();
