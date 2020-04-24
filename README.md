@@ -22,9 +22,13 @@ It updates every 8 minutes according to the countdown clock.
 The first part contains photos taken during the day, and the second part contains those taken at night.
 
 # Full Exhibition
+The full exhibition presents 180 images in ten pages.
+
+Pages 0, 0, 0, 0, & 0 also include audio files. All pages include text.
+
+The images are ordered sequentially from day to night.
 
 # Archive
-
 The archive presents 180 images in two sections.
 
 The top section contains photos taken in England, and the bottom section contains those taken in China.
