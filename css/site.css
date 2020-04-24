@@ -27,8 +27,7 @@ a:hover { cursor: pointer; }
    width: 100%;
    height: 100%;
    overflow: auto;
-   padding-top: calc(15px + 4vh + 4vw);
-
+   padding-top: calc(15px + 10vh + 4vw);
 }
 .modal-content {
    background-color: #F0F7FF;
@@ -84,4 +83,8 @@ a:hover { cursor: pointer; }
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+}
+
+@media only screen and (max-width: 415px) {
+  .modal { padding-top: calc(15px + 15vh + 6vw); }
 }
