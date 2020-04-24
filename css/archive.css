@@ -23,19 +23,6 @@
   cursor: pointer;
 }
 
-.image-rate:after {
-  content: '';
-  cursor: pointer;
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  opacity: 0;
-}
-
-.image-rate:hover:after { opacity: 1; }
-
 #fullimage {
   position: fixed;
   z-index: 999;
@@ -104,7 +91,7 @@
   font-size: calc(10px + 0.2vw + 0.2vh);
   text-align: left;
   color: #00000080;
-  padding: 1.5vh 2vh;
+  padding: 1vh 2vh;
   display: block;
 }
 

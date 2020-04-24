@@ -93,12 +93,14 @@ var last;
 function query(n) {
   if (b == true) { $(".top-card, .btm-card").css("border", "none"); b = false; }
   var card = (n <= 4) ? ".top-card" : ".btm-card";
+  var dr = (n <= 4) ? "#d1" : "#d2";
+  var c = (n <= 4) ? "England: " : "China: ";
   var k = $(card)[0].childElementCount;
 
   if (k == 0) {
     $("#fullimage").remove();
-    var l = eval("_" + n);
-    var x = l.length;
+    $(dr).html(c + document.getElementById('_' + n).innerHTML);
+    var l = eval("_" + n); var x = l.length;
     for (var i = 0; i < x; i++) { $(card).append(pre + l[i] + post); }
     last = n;
     $('#container').flexgal();

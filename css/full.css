@@ -25,6 +25,8 @@ a:hover { color: #3CB371; }
   text-align: center;
 }
 
+#aud:hover { cursor: pointer; }
+
 .image-rate img {
   float: right;
   max-width: 98%;
