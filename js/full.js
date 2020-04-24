@@ -8,7 +8,7 @@ var cP = 0;
 
 function render(n) {
   $('#container').html("");
-  
+
   var nav = document.getElementById('nav');
   nav.children[cP].removeAttribute('id');
   cP = (n - 1) + (2 * (n - 1));
@@ -19,7 +19,7 @@ function render(n) {
   for (var i = start; i <= end; i++) {
     $('#container').append('<figure class="image-rate"> <img src="img/' + i + '.jpg"></figure>');
     if ((n % 2 == 1) && (end - i == 14)) { // audio only on odd pages, after 4 images ? random
-      $('#container').append('<img id="aud" src="vol-red.png" onclick="play();"></img> <audio id="audio"> <source src="aud/SuzhouOpera.m4a" type="audio/mpeg"> </audio>');
+      $('#container').append('<img id="aud" src="icons/vol-red.png" onclick="play();"></img> <audio id="audio"> <source src="aud/SuzhouOpera.m4a" type="audio/mpeg"> </audio>');
     }
   }
 }
