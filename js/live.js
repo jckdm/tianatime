@@ -15,8 +15,7 @@ async function color() {
     if (h >= 6 && h < 22) { bg = "#FFFFFF"; }
     if (h >= 22 || h < 6) { bg = "#000000"; }
 
-    $("body").css("backgroundColor", bg);
-    $('.modal').css("background-color", bg);
+    $('body, .modal').css("background-color", bg);
     await sleep(60000);
   }
 }

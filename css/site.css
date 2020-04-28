@@ -13,7 +13,7 @@ p {
 }
 
 a, a:visited { text-decoration: none; }
-a:hover { cursor: pointer; }
+a:hover, #cBtn:hover { cursor: pointer; }
 .link { text-decoration: underline; }
 
 .modal {

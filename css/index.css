@@ -28,12 +28,11 @@
 }
 
 #myBtn, #cBtn { bottom: calc(5px + 1vh); }
-#cBtn { color: white; right: calc(5px + 1vh); }
+#cBtn { right: calc(5px + 1vh); }
 
-#cBtn:hover:before {
-  padding-right: 0.65vw;
-  font-size: calc(4px + 0.3vw + 0.3vh);
-  content: "All photos copyright Tiana Wang";
+#cText {
+  font-size: calc(3px + 0.3vw + 0.5vh);
+  padding-right: 0.5vw;
 }
 
 .menu {

@@ -34,10 +34,8 @@ async function color() {
     if (h >= 6 && h < 22) { bg = "#FFFFFF"; fg = "#000000"; }
     if (h >= 22 || h < 6) { bg = "#000000"; fg = "#FFFFFF"; }
 
-    $('body').css('backgroundColor', bg);
+    $('body, .modal, #fullimage').css('backgroundColor', bg);
     $('p').css('color', fg);
-    $('.modal').css('backgroundColor', bg);
-    $('#fullimage').css("backgroundColor", bg);
     await sleep(60000);
   }
 }
