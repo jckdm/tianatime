@@ -99,7 +99,6 @@
 .show { display: block; }
 
 @media only screen and (max-width: 415px) {
-  .image-rate { min-width: calc(20px + 3vw + 33.5vh); }
   .top-card, .btm-card { min-height: 26.5vh; }
   .top-card { margin-top: calc(10px + 4.6vh); }
   .drops {
