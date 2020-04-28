@@ -11,7 +11,7 @@
 .top-card { margin-top: calc(10px + 5vh); }
 
 .image-rate {
-  min-width: calc(20px + 1.5vw + 32.5vh);
+  width: 100%;
   position: relative;
   height: calc(20px + 20vh);
   margin: calc(0.5vw + 5px);
