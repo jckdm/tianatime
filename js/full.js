@@ -6,11 +6,11 @@ $(function() {
 
 var cP = 0;
 
-var pre = '<img id="aud" src="icons/vol-red.png" onclick="play();"></img> <audio id="audio"> <source src="aud/';
-var post = '.wav" type="audio/mpeg"> </audio>';
-
 function render(n) {
   $('#container').html("");
+
+  var pre = '<img id="aud" src="icons/vol-red.png" onclick="play();"></img> <audio id="audio"> <source src="aud/';
+  var post = '.wav" type="audio/mpeg"> </audio>';
 
   var nav = document.getElementById('nav');
   nav.children[cP].removeAttribute('id');

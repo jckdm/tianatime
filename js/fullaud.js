@@ -13,5 +13,6 @@ async function play() {
     a.play();
     await sleep(a.duration * 1000);
     a.pause();
+    $('#aud').attr('src','icons/vol-red.png');
   }
 }
