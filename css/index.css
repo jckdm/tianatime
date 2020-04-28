@@ -15,17 +15,25 @@
   width: 100%;
 }
 
-#tit, #myBtn {
+#tit, #myBtn, #cBtn {
   letter-spacing: 0.05vw;
   position: fixed;
   font-size: calc(5px + 0.85vw + 0.85vh);
-  left: 50%;
 }
 
-#myBtn {
-  bottom: calc(5px + 1vh);
+#tit, #myBtn {
+  left: 50%;
   -webkit-transform: translate(-50%);
   transform: translate(-50%);
+}
+
+#myBtn, #cBtn { bottom: calc(5px + 1vh); }
+#cBtn { color: white; right: calc(5px + 1vh); }
+
+#cBtn:hover:before {
+  padding-right: 0.65vw;
+  font-size: calc(4px + 0.3vw + 0.3vh);
+  content: "All photos copyright Tiana Wang";
 }
 
 .menu {
