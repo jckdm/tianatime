@@ -85,6 +85,4 @@ a:hover, #cBtn:hover { cursor: pointer; }
   align-items: center;
 }
 
-@media only screen and (max-width: 415px) {
-  .modal { padding-top: calc(15px + 15vh + 6vw); }
-}
+@media only screen and (max-width: 415px) { .modal { padding-top: calc(10px + 10vh + 5vw); } }
