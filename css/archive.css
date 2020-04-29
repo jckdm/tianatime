@@ -100,8 +100,8 @@ div.scrollmenu span:hover { background-color: #fffff0; }
   .top-card, .btm-card { min-height: 26.5vh; }
   .top-card { margin-top: calc(10px + 4.6vh); }
   .drops {
-    top: 75%;
-    -webkit-transform: translate(-50%,-75%);
-    transform: translate(-50%,-75%);
+    top: 80%;
+    -webkit-transform: translate(-45%,-80%);
+    transform: translate(-45%,-80%);
   }
 }
