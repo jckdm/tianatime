@@ -104,4 +104,7 @@ div.scrollmenu span:hover { background-color: #fffff0; }
     -webkit-transform: translate(-45%,-80%);
     transform: translate(-45%,-80%);
   }
+  .cnt {
+    left: 5px;
+  }
 }
