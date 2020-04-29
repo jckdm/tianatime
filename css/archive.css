@@ -72,8 +72,10 @@ div.scrollmenu span:hover { background-color: #fffff0; }
 .cnt {
   position: fixed;
   left: -50px;
-  background-color: #F0F7FF;
+  /* background-color: #F0F7FF; */
+  background-color: red;
   width: calc(15px + 4vw + 3vh);
+  z-index: 10000;
 }
 
 #engl:hover, #chn:hover { background-color: #F0F7FF; }
