@@ -40,42 +40,18 @@ async function color() {
   }
 }
 
-function go(x) {
-  if (x == 1) { document.getElementById("drop1").classList.toggle("show"); }
-  else { document.getElementById("drop2").classList.toggle("show"); }
-}
+$("#engl").mouseenter( function() { $(".top-card").css("background-color", "#3CB37133"); });
+$("#engl").mouseout( function() { $(".top-card").css("background-color", "transparent"); });
 
-window.onclick = function(event) {
-  if (!event.target.matches('.dropbtn1')) {
-    var dropdowns = document.getElementsByClassName("dc1");
-    for (var i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-      }
-    }
-  }
-  if (!event.target.matches('.dropbtn2')) {
-    var dropdowns = document.getElementsByClassName("dc2");
-    for (var i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-      }
-    }
-  }
-}
-
-$(".dropdown1").mouseenter( function() { $(".top-card").css("background-color", "#3CB37133"); });
-$(".dropdown1").mouseout( function() { $(".top-card").css("background-color", "transparent"); });
-
-$(".dropdown2").mouseenter( function() { $(".btm-card").css("background-color", "#3CB37133"); });
-$(".dropdown2").mouseout( function() { $(".btm-card").css("background-color", "transparent"); });
+$("#chn").mouseenter( function() { $(".btm-card").css("background-color", "#3CB37133"); });
+$("#chn").mouseout( function() { $(".btm-card").css("background-color", "transparent"); });
 
 var b = true;
 var pre = '<figure class="image-rate"> <img src="img/';
 var post = '.jpg"></figure>';
 var last;
+var lastE;
+var lastC;
 
 var _0 = [54, 69, 70, 81, 86, 91, 92, 102, 103, 104, 105, 109, 180];
 var _1 = [48, 49, 50, 51, 52, 53, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 71, 72, 73, 74, 75, 76, 78, 79, 80, 85, 86, 87, 88, 89, 90, 91, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 106, 107, 108, 110, 171, 172, 173, 177, 178, 179];
@@ -93,16 +69,20 @@ var _11 = [121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134,
 function query(n) {
   if (b == true) { $(".top-card, .btm-card").css("border", "none"); b = false; }
   var card = (n <= 5) ? ".top-card" : ".btm-card";
-  var dr = (n <= 5) ? "#d1" : "#d2";
   var c = (n <= 5) ? "England: " : "China: ";
   var k = $(card)[0].childElementCount;
 
   if (k == 0) {
     $("#fullimage").remove();
-    $(dr).html(c + document.getElementById('_' + n).innerHTML);
-    var l = eval("_" + n); var x = l.length; last = n;
+    var l = eval('_' + n); var x = l.length; last = n;
+    $('#_' + n).css("backgroundColor", "#3CB371");
     for (var i = 0; i < x; i++) { $(card).append(pre + l[i] + post); }
     $('#container').flexgal();
+    if (n <= 5) { $('#_' + lastE).css("backgroundColor", "#F0F7FF"); }
+    else { $('#_' + lastC).css("backgroundColor", "#F0F7FF"); }
   }
   else if (n != last) { $(card)[0].innerHTML = ""; query(n); }
+
+  if (n <= 5) { lastE = n; }
+  else { lastC = n; }
 }

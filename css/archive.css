@@ -52,51 +52,49 @@
   font-size: calc(35px + 1vw);
 }
 
-.drops {
-  text-align: center;
-  width: 100%;
-  position: fixed;
-  top: 70%;
-  left: 50%;
-  -webkit-transform: translate(-50%,-65%);
-  transform: translate(-50%,-65%);
+div.scrollmenu {
+  background-color: #F0F7FF;
+  overflow: auto;
+  white-space: nowrap;
 }
 
-.dropbtn1, .dropbtn2 {
-  font-size: calc(10px + 0.2vw + 0.15vh);
-  font-family: inherit;
-  background-color: #3CB371;
-  color: #00000080;
-  padding: 1.5vh 2vh;
-  border: none;
-  cursor: pointer;
-  width: calc(50px + 10vw + 5vh);
-}
-
-.dropdown1, .dropdown2 {
-  position: relative;
+div.scrollmenu span {
   display: inline-block;
+  padding: 3vh 2vh;
+  font-size: calc(10px + 0.2vw + 0.2vh);
+  color: #00000080;
 }
 
-.dc1, .dc2 {
-  display: none;
+div.scrollmenu span:hover { background-color: #fffff0; }
+
+#space { padding-top: calc(15px + 7.5vh); }
+
+.cnt {
+  position: fixed;
+  left: 0;
+  background-color: #F0F7FF;
+  width: calc(15px + 5vw + 3vh);
+}
+
+#engl:hover, #chn:hover { background-color: #F0F7FF; }
+
+#dc1, #dc2 {
   position: absolute;
   background-color: #F0F7FF;
   width: 100%;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
+  display: inline-block;
 }
 
-.dc1 span, .dc2 span {
-  font-size: calc(10px + 0.2vw + 0.2vh);
-  text-align: left;
-  color: #00000080;
-  padding: 1vh 2vh;
-  display: block;
+.drops {
+  text-align: center;
+  width: calc(20px + 15vh + 15vw);
+  position: fixed;
+  top: 75%;
+  left: 45%;
+  -webkit-transform: translate(-45%,-75%);
+  transform: translate(-45%,-75%);
 }
-
-.dc1 span:hover, .dc2 span:hover { background-color: #fffff0; }
-.show { display: block; }
 
 @media only screen and (max-width: 415px) {
   .top-card, .btm-card { min-height: 26.5vh; }

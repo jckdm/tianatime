@@ -24,7 +24,7 @@ The first part contains photos taken during the day, and the second part contain
 # Full Exhibition
 The full exhibition presents 180 images in ten pages.
 
-Pages 0, 0, 0, 0, & 0 also include audio files. All pages include text.
+Pages 1, 4, 5, 7, & 9 also include audio files. All pages include text.
 
 The images are ordered sequentially from day to night.
 

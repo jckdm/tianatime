@@ -37,28 +37,29 @@
       </div>
     </div>
     <div class="drops">
-      <div class="dropdown1">
-       <button onclick="go(1)" id="d1" class="dropbtn1">Search England...</button>
-       <div id="drop1" class="dc1">
-         <span id="_0" onclick="query(0)">Architecture</span>
-         <span id="_1" onclick="query(1)">Landscape</span>
-         <span id="_2" onclick="query(2)">People</span>
-         <span id="_3" onclick="query(3)">Water</span>
-         <span id="_4" onclick="query(4)">Day</span>
-         <span id="_5" onclick="query(5)">Night</span>
-       </div>
-      </div>
-      <div class="dropdown2">
-       <button onclick="go(2)" id="d2" class="dropbtn2">Search China...</button>
-       <div id="drop2" class="dc2">
-         <span id="_6" onclick="query(6)">Architecture</span>
-         <span id="_7" onclick="query(7)">Landscape</span>
-         <span id="_8" onclick="query(8)">People</span>
-         <span id="_9" onclick="query(9)">Water</span>
-         <span id="_10" onclick="query(10)">Day</span>
-         <span id="_11" onclick="query(11)">Night</span>
-       </div>
-      </div>
+        <div class="dropdown1">
+            <div id="dc1" class="scrollmenu">
+                <span id="engl" class="cnt">England:</span>
+                <span id="_0" onclick="query(0)">Architecture</span>
+                <span id="_1" onclick="query(1)">Landscape</span>
+                <span id="_2" onclick="query(2)">People</span>
+                <span id="_3" onclick="query(3)">Water</span>
+                <span id="_4" onclick="query(4)">Day</span>
+                <span id="_5" onclick="query(5)">Night</span>
+            </div>
+        </div>
+        <div id="space"></div>
+        <div class="dropdown2">
+          <div id="dc2" class="scrollmenu">
+              <span id="chn" class="cnt">China:</span>
+              <span id="_6" onclick="query(6)">Architecture</span>
+              <span id="_7" onclick="query(7)">Landscape</span>
+              <span id="_8" onclick="query(8)">People</span>
+              <span id="_9" onclick="query(9)">Water</span>
+              <span id="_10" onclick="query(10)">Day</span>
+              <span id="_11" onclick="query(11)">Night</span>
+          </div>
+        </div>
     </div>
   </body>
   <script src="js/modal.js"></script>
