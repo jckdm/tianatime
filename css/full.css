@@ -7,7 +7,7 @@ sub { font-size: calc(6px + 0.3vw + 0.3vh); }
 #aud:hover { cursor: pointer; }
 
 p {
-  padding: calc(5px + 0.5vh) 1vw calc(5px + 1.5vh) calc(5px + 2vw);
+  padding: 0 0 calc(5px + 2vh) calc(5px + 2vw);
   line-height: 1.5em;
   font-size: calc(8px + 0.4vw + 0.4vh);
 }
@@ -21,7 +21,6 @@ p {
 
 #aud {
   width: calc(10px + 2.5vh + 1.75vw);
-  padding-top: calc(1.5vw + 1.5vh);
   padding-bottom: calc(1.5vw + 1.5vh);
   color: #3CB371;
   font-size: calc(35px + 1vw);
@@ -45,4 +44,5 @@ p {
     font-size: calc(8.5px + 1.5vw);
   }
   .image-rate img { padding-bottom: 0; }
+  #aud { padding-top: calc(0.75vw + 0.75vh); }
 }
