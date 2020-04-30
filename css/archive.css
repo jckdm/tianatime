@@ -3,7 +3,7 @@
 .top-card, .btm-card {
   display: flex;
   min-width: 100%;
-  min-height: 27.5vh;
+  min-height: 30vh;
   overflow-x: auto;
   border: calc(0.1vw + 0.1vh) dashed #3CB37133;
 }
@@ -13,8 +13,8 @@
 .image-rate {
   width: 100%;
   position: relative;
-  height: calc(20px + 20vh);
-  margin: calc(0.5vw + 5px);
+  height: calc(20px + 22.5vh);
+  margin: calc(0.75vw + 7.5px);
   flex-grow: 0;
 }
 
@@ -90,10 +90,10 @@ div.scrollmenu span:hover { background-color: #fffff0; }
   text-align: center;
   width: calc(20px + 15vh + 15vw);
   position: fixed;
-  top: 75%;
+  top: 80%;
   left: 42.5%;
-  -webkit-transform: translate(-42.5%,-75%);
-  transform: translate(-42.5%,-75%);
+  -webkit-transform: translate(-42.5%,-80%);
+  transform: translate(-42.5%,-80%);
 }
 
 @media only screen and (max-width: 415px) {
