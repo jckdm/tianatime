@@ -16,7 +16,7 @@ p {
   font-size: calc(7px + 1.15vw + 0.3vh);
   position: fixed;
   left: calc(0.75vw + 0.25vh);
-  top: calc(25px + 8%);
+  top: calc(25px + 10%);
 }
 
 #aud {
@@ -40,6 +40,7 @@ p {
     padding: 0 0 0 calc(5px + 1.5vw);
   }
   #nav {
+    top: calc(25px + 12.5%);
     left: calc(0.25vw + 0.75vh);
     font-size: calc(8.5px + 1.5vw);
   }
