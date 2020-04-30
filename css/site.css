@@ -8,7 +8,6 @@ body {
 
 a, a:visited { text-decoration: none; }
 a:hover, #cBtn:hover { cursor: pointer; }
-.link { text-decoration: underline; }
 
 .modal {
    display: none;
@@ -64,11 +63,6 @@ a:hover, #cBtn:hover { cursor: pointer; }
 
 .gap { padding-bottom: calc(2vh + 1vw); }
 .smallgap { padding-bottom: calc(1vh + 0.5vw); }
-
-#sig {
-  float: right;
-  font-size: calc(5px + 0.75vw);
-}
 
 .flex-gallery {
   display: -webkit-flex;
