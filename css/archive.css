@@ -58,7 +58,7 @@ div.scrollmenu {
   white-space: nowrap;
 }
 
-div.scrollmenu span {
+.cnt, div.scrollmenu span {
   display: inline-block;
   padding: 3vh 2vh;
   font-size: calc(10px + 0.2vw + 0.2vh);
@@ -71,17 +71,9 @@ div.scrollmenu span:hover { background-color: #fffff0; }
 
 .cnt {
   position: fixed;
-  left: 50px;
+  left: 0;
   background-color: #F0F7FF;
   width: calc(15px + 4vw + 3vh);
-}
-
-/* #tags {
-  display: none;
-} */
-
-#engl {
-  z-index: 1000;
 }
 
 #engl:hover, #chn:hover { background-color: #F0F7FF; }
@@ -89,6 +81,7 @@ div.scrollmenu span:hover { background-color: #fffff0; }
 #dc1, #dc2 {
   position: absolute;
   background-color: #F0F7FF;
+  width: 100%;
   z-index: 1;
   display: inline-block;
 }
@@ -98,19 +91,18 @@ div.scrollmenu span:hover { background-color: #fffff0; }
   width: calc(20px + 15vh + 15vw);
   position: fixed;
   top: 75%;
-  left: 45%;
-  -webkit-transform: translate(-45%,-75%);
-  transform: translate(-45%,-75%);
+  left: 42.5%;
+  -webkit-transform: translate(-42.5%,-75%);
+  transform: translate(-42.5%,-75%);
 }
 
 @media only screen and (max-width: 415px) {
   .top-card, .btm-card { min-height: 26.5vh; }
   .top-card { margin-top: calc(10px + 4.6vh); }
   .drops {
-    width: 100%;
     top: 80%;
-    left: 30%;
-    -webkit-transform: translate(-30%,-80%);
-    transform: translate(-30%,-80%);
+    left: 35%;
+    -webkit-transform: translate(-35%,-80%);
+    transform: translate(-35%,-80%);
   }
 }
