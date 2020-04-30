@@ -105,7 +105,8 @@ div.scrollmenu span:hover { background-color: #fffff0; }
   .top-card { margin-top: calc(10px + 4.6vh); }
   .drops {
     top: 80%;
-    -webkit-transform: translate(-45%,-80%);
-    transform: translate(-45%,-80%);
+    left: 25%;
+    -webkit-transform: translate(-25%,-80%);
+    transform: translate(-25%,-80%);
   }
 }
