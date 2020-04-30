@@ -104,9 +104,10 @@ div.scrollmenu span:hover { background-color: #fffff0; }
   .top-card, .btm-card { min-height: 26.5vh; }
   .top-card { margin-top: calc(10px + 4.6vh); }
   .drops {
+    width: calc(20px + 20vh + 20vw);
     top: 80%;
-    left: 25%;
-    -webkit-transform: translate(-25%,-80%);
-    transform: translate(-25%,-80%);
+    left: 40%;
+    -webkit-transform: translate(-40%,-80%);
+    transform: translate(-40%,-80%);
   }
 }
