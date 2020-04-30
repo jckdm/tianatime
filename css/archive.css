@@ -76,6 +76,10 @@ div.scrollmenu span:hover { background-color: #fffff0; }
   width: calc(15px + 4vw + 3vh);
 }
 
+#tags {
+  display: none;
+}
+
 #engl:hover, #chn:hover { background-color: #F0F7FF; }
 
 #dc1, #dc2 {
