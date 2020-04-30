@@ -34,4 +34,4 @@ p {
   max-height: 100%;
 }
 
-@media only screen and (max-width: 415px) { p { font-size: calc(4px + 0.4vw + 0.3vh); } }
+@media only screen and (max-width: 415px) { p { font-size: calc(4px + 0.4vw + 0.4vh); } }
