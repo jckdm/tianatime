@@ -1,20 +1,23 @@
-p {
-  font-size: calc(8px + 0.75vw + 0.75vh);
-  width: calc(90px + 30vw);
-}
-
 a { color: #FF6F61; }
 a:hover { color: #3CB371; }
-
-#nav {
-  font-size: calc(9px + 0.625vw + 0.725vh);
-  position: fixed;
-  left: calc(0.6vw + 0.6vh);
-  top: 20%;
-}
-
+sub { font-size: calc(6px + 0.3vw + 0.3vh); }
+#space { padding-top: calc(7.5px + 3.5vh); }
 #curr { color: #3CB371; }
 #curr:hover { cursor: auto; }
+#aud:hover { cursor: pointer; }
+
+p {
+  padding: calc(5px + 0.5vw);
+  line-height: 1.5em;
+  font-size: calc(8px + 0.4vw + 0.4vh);
+}
+
+#nav {
+  font-size: calc(7px + 0.6vw + 0.7vh);
+  position: fixed;
+  left: calc(0.6vw + 0.6vh);
+  top: 12.5%;
+}
 
 #aud {
   width: calc(10px + 2.5vh + 1.75vw);
@@ -25,12 +28,10 @@ a:hover { color: #3CB371; }
   text-align: center;
 }
 
-#aud:hover { cursor: pointer; }
-
 .image-rate img {
   float: right;
-  max-width: 98%;
+  max-width: 96%;
   max-height: 100%;
 }
 
-@media (max-width: 480px) { .image-rate { height: calc(50vw - 5px); } }
+@media only screen and (max-width: 415px) { p { font-size: calc(4px + 0.4vw + 0.3vh); } }

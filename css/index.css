@@ -1,3 +1,8 @@
+p {
+  padding: calc(5px + 0.5vw);
+  line-height: 1.25em;
+}
+
 .homemenu {
   position: fixed;
   top: 50%;

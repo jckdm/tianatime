@@ -6,12 +6,6 @@ body {
   user-select: none;
 }
 
-p {
-  padding: calc(5px + 0.5vw);
-  width: calc(20px + 15vw);
-  line-height: 1.25em;
-}
-
 a, a:visited { text-decoration: none; }
 a:hover, #cBtn:hover { cursor: pointer; }
 .link { text-decoration: underline; }
