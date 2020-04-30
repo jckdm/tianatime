@@ -104,13 +104,14 @@ div.scrollmenu span:hover { background-color: #fffff0; }
   .top-card, .btm-card { min-height: 26.5vh; }
   .top-card { margin-top: calc(10px + 4.6vh); }
   .drops {
+    width: calc(5px + 10vh + 5vw);
     top: 80%;
-    left: 40%;
+    left: 30%;
     -webkit-transform: translate(-40%,-80%);
     transform: translate(-40%,-80%);
   }
-  div.scrollmenu span {
-    padding: 3vh 0vh;
-    font-size: calc(9px + 0.2vw + 0.2vh);
+  #dc1, #dc2 {
+    width: 100%;
   }
+  #engl { z-index: 1000; }
 }
