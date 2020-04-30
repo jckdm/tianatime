@@ -80,6 +80,10 @@ div.scrollmenu span:hover { background-color: #fffff0; }
   display: none;
 } */
 
+#engl {
+  z-index: 1000;
+}
+
 #engl:hover, #chn:hover { background-color: #F0F7FF; }
 
 #dc1, #dc2 {
