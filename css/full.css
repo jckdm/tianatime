@@ -7,16 +7,16 @@ sub { font-size: calc(6px + 0.3vw + 0.3vh); }
 #aud:hover { cursor: pointer; }
 
 p {
-  padding: calc(5px + 0.5vw);
+  padding: calc(5px + 0.5vh) 1vw calc(5px + 1.5vh) calc(5px + 2vw);
   line-height: 1.5em;
   font-size: calc(8px + 0.4vw + 0.4vh);
 }
 
 #nav {
-  font-size: calc(7px + 0.6vw + 0.7vh);
+  font-size: calc(7px + 1.15vw + 0.3vh);
   position: fixed;
-  left: calc(0.6vw + 0.6vh);
-  top: 12.5%;
+  left: calc(0.75vw + 0.25vh);
+  top: calc(25px + 8%);
 }
 
 #aud {
@@ -32,6 +32,17 @@ p {
   float: right;
   max-width: 96%;
   max-height: 100%;
+  padding-bottom: calc(10px + 2.5vh);
 }
 
-@media only screen and (max-width: 415px) { p { font-size: calc(4px + 0.4vw + 0.4vh); } }
+@media only screen and (max-width: 415px) {
+  p {
+    font-size: calc(4px + 0.4vw + 0.4vh);
+    padding: 0 0 0 calc(5px + 1.5vw);
+  }
+  #nav {
+    left: calc(0.25vw + 0.75vh);
+    font-size: calc(8.5px + 1.5vw);
+  }
+  .image-rate img { padding-bottom: 0; }
+}
