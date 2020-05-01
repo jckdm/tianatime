@@ -22,11 +22,11 @@ It updates every 8 minutes according to the countdown clock.
 The first part contains photos taken during the day, and the second part contains those taken at night.
 
 # Full Exhibition
-The full exhibition presents 180 images in ten pages.
+The full exhibition presents 180 images in nine pages.
 
-'6:00am', '1:12pm', '3:36pm', '8:24pm', and '1:12am' include audio files. '1:12pm' also contains Tiana's poem <i>At Oxenholme Railway Station</i>.
+'6:00am', '2:00pm', '4:40pm', '7:20pm', and '12:40am' include audio files. '2:00pm' also contains Tiana's poem <i>At Oxenholme Railway Station</i>.
 
-The images are ordered sequentially by time of day.
+Images are ordered sequentially by time of day.
 
 # Archive
 The archive presents 180 images in two sections.
