@@ -105,4 +105,8 @@ div.scrollmenu span:hover { background-color: #fffff0; }
     -webkit-transform: translate(-29.75%,-81.25%);
     transform: translate(-29.75%,-81.25%);
   }
+  .image-rate {
+    height: calc(20px + 20vh);
+    margin: calc(0.5vw + 5px);
+  }
 }
