@@ -15,7 +15,7 @@ One day, the enclosed images, sounds, and stories of traveling will not seem so 
 J.A., Apr. 2020
 
 # Live Gallery
-The live gallery presents 180 images in two parts: 6am–10pm & 10pm–6am.
+The live gallery presents 180 images in two segments: 6am–10pm & 10pm–6am.
 
 It updates every 8 minutes according to the countdown clock.
 
@@ -24,13 +24,13 @@ The first part contains photos taken during the day, and the second part contain
 # Full Exhibition
 The full exhibition presents 180 images in ten pages.
 
-Pages 1, 4, 5, 7, & 9 also include audio files. '1:12pm' contains Tiana's poem <i>At Oxenholme Railway Station</i>.
+'6:00am', '1:12pm', '3:36pm', '8:24pm', and '1:12am' include audio files. '1:12pm' also contains Tiana's poem <i>At Oxenholme Railway Station</i>.
 
-The images are ordered sequentially from day to night.
+The images are ordered sequentially by time of day.
 
 # Archive
 The archive presents 180 images in two sections.
 
 The top section contains photos taken in England, and the bottom section contains those taken in China.
 
-Both sections can be queried individually using several tags.
+Both sections can be queried individually using a set of tags.
