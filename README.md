@@ -26,7 +26,7 @@ The full exhibition presents 180 images in nine pages.
 
 '6:00am', '2:00pm', '4:40pm', '7:20pm', and '12:40am' include audio files. '2:00pm' also contains Tiana's poem <i>At Oxenholme Railway Station</i>.
 
-Images are ordered sequentially by time of day.
+The first six pages contain photos taken during the day, and the last three contain those taken at night.
 
 # Archive
 The archive presents 180 images in two sections.
