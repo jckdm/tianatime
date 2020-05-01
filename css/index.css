@@ -48,6 +48,11 @@ p {
 }
 
 .menu {
+  text-align: center;
+  font-size: calc(10px + 2.2vw + 0.8vh);
+  width: calc(25px + 35vw);
+  padding-left: calc(1vw + 1vh);
+  padding-right: calc(1vw + 1vh);
   border-bottom: calc(0.50vh + 0.50vw) solid #3CB371;
   border-top: calc(0.50vh + 0.50vw) solid #3CB371;
   border-left: calc(0.50vh + 0.50vw) solid transparent;
@@ -59,12 +64,4 @@ p {
   border-top: calc(0.50vh + 0.50vw) solid transparent;
   border-left: calc(0.50vh + 0.50vw) solid #3CB371;
   border-right: calc(0.50vh + 0.50vw) solid #3CB371;
-}
-
-.menu {
-  text-align: center;
-  font-size: calc(10px + 2.2vw + 0.8vh);
-  width: calc(25px + 35vw);
-  padding-left: calc(1vw + 1vh);
-  padding-right: calc(1vw + 1vh);
 }

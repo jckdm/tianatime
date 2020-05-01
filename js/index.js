@@ -8,6 +8,8 @@ $(function() {
   });
 });
 
+function sleep(ms) { return new Promise(resolve => setTimeout(resolve, ms)); }
+
 async function color() {
   var bg, fg;
   while (true) {
