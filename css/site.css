@@ -77,6 +77,7 @@ a:hover, #cBtn:hover { cursor: pointer; }
 }
 
 @media only screen and (max-width: 415px) {
-  .modal { padding-top: calc(10px + 7.5vh + 4vw); }
+  .modal { padding-top: calc(20px + 17.5vh + 2.5vw); }
+  .index-modal { padding-top: calc(20px + 3.5vh + 1vw); }
   .modal-content { width: 70%; }
 }
