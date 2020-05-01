@@ -9,7 +9,7 @@ body {
 a, a:visited { text-decoration: none; }
 a:hover, #cBtn:hover { cursor: pointer; }
 
-.modal {
+.modal, .index-modal {
    display: none;
    position: fixed;
    z-index: 5;
@@ -20,8 +20,11 @@ a:hover, #cBtn:hover { cursor: pointer; }
    width: 100%;
    height: 100%;
    overflow: auto;
-   padding-top: calc(20px + 12.5vh + 1vw);
 }
+
+.modal { padding-top: calc(20px + 15vh + 1vw); }
+.index-modal { padding-top: calc(20px + 7vh + 1vw); }
+
 .modal-content {
    background-color: #F0F7FF;
    margin: auto;

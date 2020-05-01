@@ -21,7 +21,7 @@ async function color() {
     if (h >= 6 && h < 22) { bg = "#FFFFFF"; fg = "#000000"; }
     if (h >= 22 || h < 6) { bg = "#000000"; fg = "#FFFFFF"; }
 
-    $('body, .modal').css("backgroundColor", bg);
+    $('body, .index-modal').css("backgroundColor", bg);
     $('a, #cBtn').css("color", fg);
     $('#myBtn').css("color", "#FF6F61");
     $('.link').css("color", "#3CB371");
